@@ -1,0 +1,304 @@
+.experience {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(45, 212, 191, 0.05) 0%, transparent 50%),
+    #0c0d0f;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::before {
+  display: none;
+}
+
+/* Roomier container just for Experience — Gantt breathes better */
+.experience .container {
+  max-width: min(1560px, 96vw);
+}
+
+.experience__content {
+  position: relative;
+  z-index: 1;
+}
+
+.experience__header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  max-width: 640px;
+}
+
+.experience__panel {
+  background: #14181f;
+  padding: 2.25rem 2rem;
+  border-radius: 4px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(244, 241, 234, 0.12);
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+/* ---- Legend ---- */
+.experience__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.experience__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.experience__legend-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.experience__legend-item--work { color: #38BDF8; border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.08); }
+.experience__legend-item--work::before { background: #38BDF8; box-shadow: 0 0 8px #38BDF8; }
+.experience__legend-item--hackathon { color: #A78BFA; border-color: rgba(167,139,250,0.35); background: rgba(167,139,250,0.08); }
+.experience__legend-item--hackathon::before { background: #A78BFA; box-shadow: 0 0 8px #A78BFA; }
+.experience__legend-item--education { color: #34D399; border-color: rgba(52,211,153,0.35); background: rgba(52,211,153,0.08); }
+.experience__legend-item--education::before { background: #34D399; box-shadow: 0 0 8px #34D399; }
+.experience__legend-item--personal { color: #F59E0B; border-color: rgba(245,158,11,0.35); background: rgba(245,158,11,0.08); }
+.experience__legend-item--personal::before { background: #F59E0B; box-shadow: 0 0 8px #F59E0B; }
+
+/* ---- Gantt Timeline ---- */
+.experience__gantt {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.experience__gantt-axis {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 0;
+  margin-bottom: 0.75rem;
+}
+
+.experience__gantt-axis-years {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 2px solid rgba(148, 163, 184, 0.18);
+}
+
+.experience__gantt-year {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.5rem;
+  border-left: 1px solid rgba(148, 163, 184, 0.12);
+  letter-spacing: 0.04em;
+}
+
+.experience__gantt-year:first-child {
+  border-left: none;
+}
+
+.experience__gantt-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience__gantt-row {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 0;
+  min-height: 96px;
+  border-radius: 12px;
+  padding: 0.65rem 0;
+  transition: background 0.2s ease;
+}
+
+.experience__gantt-row:hover {
+  background: rgba(148, 163, 184, 0.04);
+}
+
+.experience__gantt-label {
+  padding-right: 1rem;
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.experience__gantt-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.25rem;
+}
+
+.experience__gantt-row--work .experience__gantt-tag { background: rgba(56,189,248,0.15); color: #38BDF8; }
+.experience__gantt-row--hackathon .experience__gantt-tag { background: rgba(167,139,250,0.15); color: #A78BFA; }
+.experience__gantt-row--education .experience__gantt-tag { background: rgba(52,211,153,0.15); color: #34D399; }
+.experience__gantt-row--personal .experience__gantt-tag { background: rgba(245,158,11,0.15); color: #F59E0B; }
+
+.experience__gantt-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.experience__gantt-org {
+  font-size: 0.82rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.9;
+  word-break: break-word;
+}
+
+.experience__gantt-dates {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin: 0.1rem 0 0;
+  opacity: 0.75;
+  letter-spacing: 0.02em;
+}
+
+.experience__gantt-track {
+  position: relative;
+  margin-left: 1rem;
+  min-height: 40px;
+}
+
+.experience__gantt-gridline {
+  position: absolute;
+  top: -0.65rem;
+  bottom: -0.65rem;
+  width: 1px;
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.experience__gantt-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  border-radius: 8px;
+  padding: 0 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 14px;
+}
+
+.experience__gantt-bar:hover {
+  transform: translateY(-50%) scale(1.03);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.experience__gantt-row--work .experience__gantt-bar { background: linear-gradient(to right, #0284C7, #38BDF8); }
+.experience__gantt-row--hackathon .experience__gantt-bar { background: linear-gradient(to right, #7C3AED, #A78BFA); }
+.experience__gantt-row--education .experience__gantt-bar { background: linear-gradient(to right, #059669, #34D399); }
+.experience__gantt-row--personal .experience__gantt-bar { background: linear-gradient(to right, #D97706, #F59E0B); }
+
+.experience__gantt-bar--point {
+  width: 22px !important;
+  min-width: 22px;
+  height: 22px;
+  padding: 0;
+  border-radius: 4px;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.experience__gantt-bar--point:hover {
+  transform: translateY(-50%) rotate(45deg) scale(1.2);
+}
+
+/* Tablet + mobile */
+@media (max-width: 900px) {
+  .experience__gantt-axis {
+    grid-template-columns: 1fr;
+  }
+  .experience__gantt-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.35rem;
+    padding: 0.85rem 0.5rem;
+    min-height: auto;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    border-radius: 8px;
+  }
+  .experience__gantt-label {
+    border-right: none;
+    padding-right: 0;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .experience__gantt-tag {
+    margin-bottom: 0;
+  }
+  .experience__gantt-role {
+    font-size: 0.92rem;
+    flex: 1 1 auto;
+  }
+  .experience__gantt-org {
+    font-size: 0.78rem;
+    flex: 0 0 100%;
+  }
+  .experience__gantt-dates {
+    font-size: 0.7rem;
+    flex: 0 0 100%;
+  }
+  .experience__gantt-track {
+    margin-left: 0;
+    min-height: 32px;
+  }
+  .experience__gantt-bar {
+    height: 28px;
+    font-size: 0.65rem;
+    padding: 0 0.5rem;
+  }
+  .experience__gantt-bar--point {
+    width: 18px !important;
+    min-width: 18px;
+    height: 18px;
+  }
+  .experience__panel {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience__gantt-year {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.25rem;
+  }
+}

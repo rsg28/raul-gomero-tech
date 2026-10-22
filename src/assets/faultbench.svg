@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Fault Bench">
+  <rect width="1200" height="750" fill="#12110d"/>
+  <rect width="1200" height="28" fill="#e3a32a"/>
+  <rect y="28" width="1200" height="28" fill="#12110d"/>
+  <g>
+    <rect y="0" width="1200" height="28" fill="url(#tape)"/>
+  </g>
+  <defs>
+    <pattern id="tape" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="14" height="28" fill="#12110d"/>
+      <rect x="14" width="14" height="28" fill="#e3a32a"/>
+    </pattern>
+  </defs>
+  <rect y="0" width="1200" height="22" fill="url(#tape)"/>
+  <rect x="80" y="120" width="1040" height="520" fill="#1b1914" stroke="#e3a32a" stroke-opacity="0.35"/>
+  <text x="110" y="180" fill="#e3a32a" font-family="Georgia, serif" font-size="18" letter-spacing="0.32em">RG SERVICE</text>
+  <text x="110" y="280" fill="#f3ead8" font-family="Impact, sans-serif" font-size="86">FAULT BENCH</text>
+  <text x="110" y="340" fill="#9a9184" font-family="Georgia, serif" font-size="26">Eight machines. One cause each.</text>
+  <text x="110" y="560" fill="#e3a32a" font-family="ui-monospace, monospace" font-size="18">DNS · SMART · THERMAL · DIMM · DRIVER · 41 · APIPA · CMOS</text>
+</svg>

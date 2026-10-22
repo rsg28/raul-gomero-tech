@@ -1,0 +1,87 @@
+.bios {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #020403;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono), 'Courier New', monospace;
+  color: #4ade80;
+}
+
+.bios__scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.18) 2px,
+    rgba(0, 0, 0, 0.18) 4px
+  );
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.bios__panel {
+  position: relative;
+  z-index: 1;
+  width: min(640px, 92vw);
+  padding: 1.5rem;
+}
+
+.bios__brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #86efac;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(74, 222, 128, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.bios__lines {
+  min-height: 14rem;
+}
+
+.bios__line {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  margin: 0;
+  color: #4ade80;
+  animation: biosFade 0.2s ease;
+}
+
+.bios__line--ok {
+  color: #f4f1ea;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.bios__ok {
+  color: #22d3ee;
+  margin-right: 0.35rem;
+}
+
+.bios__cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+  color: #4ade80;
+  margin-top: 0.25rem;
+}
+
+.bios__hint {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  color: rgba(74, 222, 128, 0.45);
+  letter-spacing: 0.04em;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes biosFade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Commonplace">
+  <rect width="1200" height="750" fill="#1a1612"/>
+  <rect x="72" y="48" width="1056" height="654" fill="#f3ead8"/>
+  <rect x="72" y="48" width="14" height="654" fill="#7c2d22"/>
+  <line x1="168" y1="48" x2="168" y2="702" stroke="#c45c4a" stroke-width="1.2" opacity="0.7"/>
+  <text x="210" y="168" fill="#7c2d22" font-family="Georgia, serif" font-size="22" letter-spacing="0.28em">CUADERNO</text>
+  <text x="210" y="292" fill="#1a1612" font-family="Georgia, serif" font-size="92" font-weight="700">Commonplace</text>
+  <text x="210" y="360" fill="#4a4338" font-family="Georgia, serif" font-size="28">Ideas from the global canon.</text>
+  <text x="210" y="620" fill="#7c2d22" font-family="Georgia, serif" font-size="20" letter-spacing="0.12em">GILGAMESH  ·  CONFUCIUS  ·  RAWLS</text>
+</svg>

@@ -1,0 +1,121 @@
+.terminal {
+  background:
+    linear-gradient(180deg, #0c0d0f 0%, #12151a 50%, #0c0d0f 100%);
+}
+
+.terminal__header {
+  text-align: left;
+  margin-bottom: 1.75rem;
+  max-width: 640px;
+}
+
+.terminal__window {
+  border: 2px solid rgba(244, 241, 234, 0.16);
+  background: #060708;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.45);
+  cursor: text;
+  overflow: hidden;
+}
+
+.terminal__chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.9rem;
+  background: #14181f;
+  border-bottom: 1px solid rgba(244, 241, 234, 0.1);
+}
+
+.terminal__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.terminal__dot--r { background: #f87171; }
+.terminal__dot--y { background: #fbbf24; }
+.terminal__dot--g { background: #4ade80; }
+
+.terminal__path {
+  margin-left: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.terminal__body {
+  padding: 1.1rem 1.15rem 0.75rem;
+  min-height: 260px;
+  max-height: 360px;
+  overflow-y: auto;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.terminal__line {
+  margin: 0 0 0.35rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal__line--sys { color: #67e8f9; }
+.terminal__line--in { color: #f4f1ea; }
+.terminal__line--out { color: #a7f3d0; }
+.terminal__line--err { color: #fb923c; }
+
+.terminal__form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.terminal__prompt {
+  color: var(--spray-cyan);
+  flex-shrink: 0;
+}
+
+.terminal__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--chalk);
+  font-family: inherit;
+  font-size: inherit;
+  caret-color: var(--spray-orange);
+}
+
+.terminal__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid rgba(244, 241, 234, 0.08);
+  background: #0c0d0f;
+}
+
+.terminal__chip {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  background: transparent;
+  color: var(--spray-cyan);
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.terminal__chip:hover {
+  background: var(--spray-cyan);
+  color: #0c0d0f;
+}
+
+@media (max-width: 640px) {
+  .terminal__body {
+    min-height: 220px;
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,1253 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "personal": "Personal",
+    "terminal": "CLI",
+    "pc": "La PC",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Código · Sistemas · Hardware",
+    "name": "Raul Gomero",
+    "imA": "Soy",
+    "rolesList": [
+      "Tech Support Specialist",
+      "Full-Stack Developer",
+      "Systems Enthusiast",
+      "Cloud & Systems Engineer",
+      "PC Builder & Tinkerer",
+      "Problem Solver"
+    ],
+    "roles": {
+      "builder": "Full-Stack Developer",
+      "volleyball": "Tech Support Specialist",
+      "trilingual": "Systems Enthusiast",
+      "boxer": "Cloud & Systems Engineer",
+      "kitchen": "PC Builder & Tinkerer",
+      "systems": "Problem Solver"
+    },
+    "description": "Graduado de Computing Science en SFU, en Vancouver. Escribo código, arreglo sistemas y me mantengo cerca del hardware — desde BIOS y drivers hasta deploys en AWS y apps en producción.",
+    "viewPersonal": "Lado personal",
+    "viewWork": "Proyectos",
+    "getInTouch": "Contacto",
+    "viewSkills": "Habilidades",
+    "viewExperience": "Experiencia",
+    "viewProjects": "Proyectos"
+  },
+  "about": {
+    "tag": "Quién soy",
+    "title": "Sobre mí",
+    "subtitle": "Software engineer con vena de IT hands-on",
+    "description1": "Hola, soy Raul. Me gradué de Simon Fraser University con una Licenciatura en Ciencias Aplicadas en Ciencias de la Computación, y divido mi tiempo entre escribir código, mantener sistemas y solucionar lo que sea necesario para que todo siga andando. He shippeado apps en React y React Native a usuarios reales, desplegado en AWS y armé mi propio workstation de alto rendimiento Windows 11 desde cero como parte de mi estudio de CompTIA A+ Core 1.",
+    "description2": "Mi tipo favorito de ingeniería es la que realmente llega a la gente. Eso significa código limpio, pero también leer logs de error a medianoche, guiar a un usuario no técnico por un fix, ajustar el BIOS hasta que el driver deje de crashear y configurar workflows de backup que dejen de ser una idea de último momento. Me gusta el loop completo, no solo las partes divertidas.",
+    "description3": "Estudié Ciencias de la Computación pero me mantuve cerca del hardware. Manejo Python, JavaScript, TypeScript, C++ y SQL con soltura, y me muevo cómodo entre Windows y Linux, VMware y VirtualBox, AWS y GitHub. Trilingüe (inglés, francés, español), basado en Vancouver, listo para trabajo híbrido.",
+    "imageText": "Construyendo y soportando",
+    "downloadCv": "Descargar CV de IT",
+    "downloadCvNote": "PDF · Soporte / IT",
+    "highlights": [
+      "SFU Computing Science — B.A.Sc.",
+      "Trilingüe · EN / FR / ES",
+      "Código + sistemas + hardware"
+    ]
+  },
+  "skills": {
+    "title": "Lo que hago",
+    "tag": "Toolkit",
+    "subtitle": "El stack con el que construyo, deploy y hago soporte",
+    "categories": "Áreas de enfoque",
+    "detailedSkills": "Habilidades en detalle",
+    "clickHint": "Haz clic en cualquier skill o idioma para ver contexto, nivel y dónde la he usado.",
+    "langLabel": {
+      "english": "Fluido · Profesional",
+      "french": "Fluido · Profesional",
+      "spanish": "Nativo"
+    },
+    "langAxis": {
+      "speaking": "Hablar",
+      "listening": "Escuchar",
+      "reading": "Leer",
+      "writing": "Escribir"
+    },
+    "langBreakdown": {
+      "english": {
+        "speaking":  { "level": "C1", "note": "Cómodo en entrevistas, standups y llamadas con clientes." },
+        "listening": { "level": "C2", "note": "Reuniones a velocidad nativa, podcasts y charlas técnicas." },
+        "reading":   { "level": "C2", "note": "Docs técnicas, RFCs, contratos y code review." },
+        "writing":   { "level": "C1", "note": "Documentación, descripciones de PR y correos profesionales." }
+      },
+      "french": {
+        "speaking":  { "level": "B2", "note": "Conversación de trabajo diaria y llamadas tipo soporte." },
+        "listening": { "level": "C1", "note": "Noticias, reuniones y explicaciones técnicas." },
+        "reading":   { "level": "C1", "note": "Docs, artículos y correspondencia profesional." },
+        "writing":   { "level": "B2", "note": "Correos y documentos cortos con revisión ligera." }
+      },
+      "spanish": {
+        "speaking":  { "level": "C2", "note": "Nativo. Fluidez en registro casual y de negocios." },
+        "listening": { "level": "C2", "note": "Nativo — incluye acentos regionales." },
+        "reading":   { "level": "C2", "note": "Comprensión total en textos formales y técnicos." },
+        "writing":   { "level": "C2", "note": "Español de negocios, reportes y redacción técnica." }
+      }
+    },
+    "experienceJourney": "Trayectoria",
+    "proficiency": "Nivel",
+    "whatIs": "¿Qué es {{skill}}?",
+    "closePopup": "Cerrar",
+    "categoriesList": {
+      "programmingLanguages": "Lenguajes de Programación",
+      "backendApis": "Backend y APIs",
+      "frontendMobile": "Frontend y Mobile",
+      "cloudDevops": "Cloud y DevOps",
+      "itSystems": "IT / Sistemas / Soporte",
+      "aiMl": "IA / ML",
+      "languages": "Idiomas"
+    },
+    "experienceTypes": {
+      "work": "Trabajo",
+      "hackathon": "Hackathon",
+      "education": "Educación",
+      "personal": "Personal"
+    },
+    "experience": {
+      "secuAppRole": "Ingeniero de Software (Freelance)",
+      "secuAppOrg": "SecuApp",
+      "secuAppDates": "Feb 2026 – Ago 2026",
+      "secuAppDesc": "Construyendo funcionalidades de una app React Native con backend en AWS. Depurando errores de exportación a Excel, implementando flujos de autenticación y manejando requerimientos del cliente de principio a fin.",
+
+      "tuSaludRole": "Asistente Administrativo + Automatización",
+      "tuSaludOrg": "TuSalud",
+      "tuSaludDates": "Ene 2026 – Ago 2026",
+      "tuSaludDesc": "Escribí automatización en Python para procesar reportes médicos largos (pandas, openpyxl) y consolidar datos con SQL. También manejé operaciones administrativas, registros y accesos por rol.",
+
+      "lineCookRole": "Cocinero de Línea",
+      "lineCookOrg": "Craft Beer Market",
+      "lineCookDates": "Mar 2026 – Ago 2026",
+      "lineCookDesc": "Presencia confiable en horas pico, procedimientos de manejo de alimentos y coordinación de estación bajo presión. Rol estable de tardes en paralelo al trabajo técnico.",
+
+      "ganpiRole": "Team Lead — GANPI",
+      "ganpiOrg": "StormHacks 2025 · 1er Lugar",
+      "ganpiDates": "Oct 2025",
+      "ganpiDesc": "Lideré un equipo en un build de 36 horas de una herramienta CLI en C++ que convierte lenguaje natural en comandos de shell seguros usando la API de Google Gemini.",
+
+      "pcBuildRole": "Workstation Windows 11 Personalizada",
+      "pcBuildOrg": "ARMOURY Vanguard I-358",
+      "pcBuildDates": "Jun 2025 – En curso",
+      "pcBuildDesc": "Configuré y afiné una máquina Windows 11 Pro de punta a punta: Intel Core Ultra 7 265KF, RTX 5060 Ti, 32GB DDR5, 2TB NVMe, refrigeración por aire, Wi-Fi 7. BIOS/UEFI, drivers, virtualización.",
+
+      "comptiaRole": "CompTIA A+ Core 1 — Autoestudio",
+      "comptiaOrg": "Preparación para el examen 220-1201",
+      "comptiaDates": "Jun 2025 – En curso",
+      "comptiaDesc": "Estudio estructurado de hardware, redes, dispositivos móviles, virtualización y troubleshooting. Práctica real sobre mi propio equipo y en laboratorios en VMware / VirtualBox.",
+
+      "elContadorRole": "Full-Stack Developer / DevOps",
+      "elContadorOrg": "El Contador EC",
+      "elContadorDates": "Mar 2025 – Jul 2025",
+      "elContadorDesc": "Entregué un sitio de e-commerce de punta a punta: front-end en React, despliegue en AWS EC2 + S3 + Route 53, IAM y configuración de DNS. Trabajo directo con el cliente.",
+
+      "grupoFjRole": "Ingeniero de Software",
+      "grupoFjOrg": "Grupo FJ",
+      "grupoFjDates": "Ene 2025 – May 2025",
+      "grupoFjDesc": "Construí y desplegué dos sitios corporativos, escribí front-end responsivo, integré feedback de diseño y marketing en el código antes del lanzamiento.",
+
+      "spikeConnectRole": "Team Lead — SpikeConnect",
+      "spikeConnectOrg": "DreamHacks 2025 · Ganador",
+      "spikeConnectDates": "Feb 2025",
+      "spikeConnectDesc": "App React Native para la comunidad de voleibol. Modelado de datos para jugadores, ratings e historial de partidos. Coordiné el equipo desde requerimientos hasta el ship.",
+
+      "personalAutomationRole": "Práctica Personal de Código y Automatización",
+      "personalAutomationOrg": "Autodirigido · En curso",
+      "personalAutomationDates": "2024 – Presente",
+      "personalAutomationDesc": "Scripts en Python, utilidades en Bash / PowerShell, side projects y práctica diaria de Git / GitHub. Donde pruebo stacks nuevos y afilo hábitos de tooling.",
+
+      "surgeRole": "Ingeniero de Software — Backend y QA",
+      "surgeOrg": "SFU Surge",
+      "surgeDates": "Ene 2023 – May 2024",
+      "surgeDesc": "Pruebas de carga del sistema de inscripción para StormHacks 2024 (500+ asistentes), mantenimiento de sistemas de cuentas y seguimiento de entregables de sprint en Notion y GitHub.",
+
+      "sfuRole": "Licenciatura en Ciencias de la Computación",
+      "sfuOrg": "Simon Fraser University",
+      "sfuDates": "Sep 2020 – Jun 2025",
+      "sfuDesc": "Ingeniería de software, bases de datos, sistemas operativos, redes, computación biomédica, algoritmos. Proyectos grupales con plazos reales y cultura de code review.",
+
+      "mountainMadnessRole": "Extensión Chrome — Computer Vision",
+      "mountainMadnessOrg": "Mountain Madness Hackathon · SFU",
+      "mountainMadnessDates": "Nov 2022",
+      "mountainMadnessDesc": "Extensión de Chrome con OpenCV y DeepFace para experimentos de CV en tiempo real dentro del navegador. Python + JavaScript, hecha en un fin de semana con un equipo chico.",
+
+      "canineXrayRole": "Clasificación de Rayos X Caninos — Deep Learning",
+      "canineXrayOrg": "CMPT 340 — Computación Biomédica · SFU",
+      "canineXrayDates": "Feb 2024 – Abr 2024",
+      "canineXrayDesc": "Proyecto grupal de ML entrenando una CNN con radiografías veterinarias de perros para marcar hallazgos anómalos. Limpieza de datos, augmentation y evaluación de modelo.",
+
+      "pcWatchdogRole": "PC Health Watchdog — Daemon en Python",
+      "pcWatchdogOrg": "Studio · Python + psutil + WMI + SQLite",
+      "pcWatchdogDates": "May 2026 – En curso",
+      "pcWatchdogDesc": "Daemon en background que muestrea temps CPU/GPU, RAM, disco y fans, los guarda en SQLite, envía un digest PDF semanal por correo y dispara alertas de Discord al pasar un umbral.",
+
+      "jarvisRole": "Jarvis — Asistente de IA Personal",
+      "jarvisOrg": "Studio · Python + PySide6 + edge-tts",
+      "jarvisDates": "2024 – En curso",
+      "jarvisDesc": "Asistente de escritorio siempre activo con un HUD circular flotante. Dos aplausos lo lanzan, el wake word 'hey jarvis' toma comandos por voz y una voz neural responde. Noticias, fútbol, timers, media control, screenshots."
+    },
+    "descriptions": {
+      "python": "Lenguaje de propósito general que uso para automatización, procesamiento de datos, prototipos de ML y scripts de backend. Fuerte con pandas, openpyxl, python-docx y requests.",
+      "javascript": "Lenguaje principal para front-end y backends en Node.js. Escribo código modular y limpio y me manejo en codebases mixtos React / vanilla.",
+      "typescript": "JavaScript tipado para codebases grandes. Lo uso cuando la superficie justifica la seguridad extra, sobre todo en APIs de backend.",
+      "cpp": "Lenguaje de bajo nivel que aprendí durante mi carrera. Usado en GANPI (ganador de StormHacks 2025) y en varios proyectos de coursework.",
+      "c": "Lenguaje fundacional para trabajo cerca del hardware. Útil para entender qué hacen realmente los lenguajes de más alto nivel.",
+      "sql": "Leer y escribir SELECTs con JOINs y GROUP BY. Cruzar, limpiar y validar datos entre tablas y sistemas.",
+      "nodejs": "Runtime de JavaScript para servicios de backend. He construido APIs con Express e integrado con apps móviles y bases de datos.",
+      "expressjs": "Framework mínimo y flexible de Node.js que uso cuando necesito una REST API sin ceremonia.",
+      "restApis": "La forma por defecto de mover datos entre sistemas. Diseño, consumo e integración con fetch / axios / postman.",
+      "postgresql": "Base de datos relacional que uso para datos estructurados. Diseño de schema, JOINs, índices y optimización básica de queries.",
+      "mongodb": "Base de datos documental. La usé en side projects donde el schema necesitaba mantenerse flexible.",
+      "firebase": "Backend rápido para apps pequeñas y prototipos. Auth, Firestore y hosting para las primeras iteraciones.",
+      "react": "Mi librería front-end por defecto. Diseño de componentes, hooks, manejo de estado e integración con APIs.",
+      "reactNative": "Apps móviles multiplataforma. He shippeado features en React Native para SecuApp y SpikeConnect en iOS y Android.",
+      "nextjs": "Framework de React para SSR y generación estática cuando el SEO o performance importan de verdad.",
+      "htmlcss": "La base de todo lo web. Cómodo con HTML semántico, CSS moderno, Flexbox, Grid y diseño responsivo.",
+      "tailwindcss": "CSS utility-first que uso para moverme rápido sin escribir stylesheets desde cero.",
+      "aws": "Despliegues reales en EC2, S3, Route 53 e IAM. He configurado DNS, security groups y desplegado apps estáticas y full-stack.",
+      "docker": "Contenedores para entornos de desarrollo reproducibles y deploys consistentes. Profundizando en Compose y orquestación.",
+      "git": "Herramienta diaria de control de versiones. Ramas, PRs, rebases, code review y resolución de merge conflicts en repos reales.",
+      "cicd": "Básicos de GitHub Actions y pipelines de Vercel. Automatizando build, test y deploy en proyectos pequeños.",
+      "windows": "Windows 11 Pro como driver diario. Armé mi propio workstation desde partes: configuración BIOS/UEFI, boot management y troubleshooting de drivers.",
+      "linux": "CLI, shell scripting, permisos, manejo de paquetes y lectura de logs de sistema. Cómodo en Ubuntu y otras distros comunes.",
+      "hardware": "Ensamblaje y upgrades de PC hands-on: install de CPU/GPU, pasta térmica, RAM/SSD, cableado de PSU y testing de estabilidad post-build.",
+      "virtualization": "VMware Workstation y VirtualBox para probar instalaciones de OS, correr entornos aislados y ensayar escenarios de soporte IT.",
+      "networking": "TCP/IP, DNS, DHCP, estándares Wi-Fi (hasta Wi-Fi 7) y troubleshooting básico con ipconfig, ping, tracert y nslookup.",
+      "comptia": "Estudiando CompTIA A+ Core 1 para formalizar el conocimiento de hardware, redes, dispositivos móviles y troubleshooting que ya uso a diario.",
+      "tensorflow": "Framework de machine learning usado en proyectos de coursework (computación biomédica) y experimentos personales.",
+      "openaiApis": "APIs de OpenAI y Google Gemini para features con LLM. Usadas en GANPI y otros experimentos.",
+      "english": "Fluido, competencia profesional. Idioma principal de trabajo en Canadá.",
+      "french": "Fluido, competencia profesional. Útil para roles federales y clientes en Quebec.",
+      "spanish": "Hablante nativo. Fluidez total en español de negocio, escrito y hablado."
+    }
+  },
+  "experience": {
+    "title": "Por Dónde He Andado",
+    "subtitle": "Trabajo, educación, hackathons y side projects en una sola línea de tiempo",
+    "types": {
+      "work": "Trabajo",
+      "hackathon": "Hackathon",
+      "education": "Educación",
+      "personal": "Personal"
+    },
+    "entries": {
+      "secuAppRole": "Software Engineer (Freelance)",
+      "secuAppOrg": "SecuApp",
+      "secuAppDates": "Feb 2026 – Ago 2026",
+
+      "tuSaludRole": "Asistente Administrativo + Automatización",
+      "tuSaludOrg": "TuSalud",
+      "tuSaludDates": "Ene 2026 – Ago 2026",
+
+      "lineCookRole": "Cocinero de línea",
+      "lineCookOrg": "Craft Beer Market",
+      "lineCookDates": "Mar 2026 – Ago 2026",
+
+      "ganpiRole": "Team Lead — GANPI",
+      "ganpiOrg": "StormHacks 2025 · 1er Lugar",
+      "ganpiDates": "Oct 2025",
+
+      "pcBuildRole": "Workstation Windows 11 personalizada",
+      "pcBuildOrg": "ARMOURY Vanguard I-358",
+      "pcBuildDates": "Jun 2025 – En curso",
+
+      "comptiaRole": "CompTIA A+ Core 1 — Autoestudio",
+      "comptiaOrg": "Preparación para el examen 220-1201",
+      "comptiaDates": "Jun 2025 – En curso",
+
+      "elContadorRole": "Full-Stack Developer / DevOps",
+      "elContadorOrg": "El Contador EC",
+      "elContadorDates": "Mar 2025 – Jul 2025",
+
+      "grupoFjRole": "Software Engineer",
+      "grupoFjOrg": "Grupo FJ",
+      "grupoFjDates": "Ene 2025 – May 2025",
+
+      "spikeConnectRole": "Team Lead — SpikeConnect",
+      "spikeConnectOrg": "DreamHacks 2025 · Ganador",
+      "spikeConnectDates": "Feb 2025",
+
+      "personalAutomationRole": "Código y automatización personal",
+      "personalAutomationOrg": "Auto-dirigido · En curso",
+      "personalAutomationDates": "2024 – Presente",
+
+      "surgeRole": "Software Engineer — Backend & QA",
+      "surgeOrg": "SFU Surge",
+      "surgeDates": "Ene 2023 – May 2024",
+
+      "sfuRole": "B.A.Sc. en Computing Science",
+      "sfuOrg": "Simon Fraser University",
+      "sfuDates": "Sep 2020 – Jun 2025",
+
+      "mountainMadnessRole": "Extensión Chrome — Computer Vision",
+      "mountainMadnessOrg": "Mountain Madness Hackathon · SFU",
+      "mountainMadnessDates": "Nov 2022",
+
+      "canineXrayRole": "Clasificación Rayos X Caninos — Deep Learning",
+      "canineXrayOrg": "CMPT 340 — Computación Biomédica · SFU",
+      "canineXrayDates": "Feb 2024 – Abr 2024",
+
+      "pcWatchdogRole": "PC Health Watchdog — Daemon en Python",
+      "pcWatchdogOrg": "Studio · Python + psutil + WMI",
+      "pcWatchdogDates": "May 2026 – En curso",
+
+      "jarvisRole": "Jarvis — Asistente de IA Personal",
+      "jarvisOrg": "Studio · Python + PySide6 + edge-tts",
+      "jarvisDates": "2024 – En curso"
+    }
+  },
+  "pc": {
+    "tag": "Build de hardware",
+    "title": "La PC",
+    "subtitle": "ARMOURY Vanguard I-358. Mi workstation de todos los días, armada y afinada de punta a punta. Rótala, explota las piezas, haz click en un hotspot — te digo por qué elegí cada una.",
+    "legendTitle": "Componentes (click para inspeccionar)",
+    "whyTitle": "Por qué la elegí",
+    "explode": "Vista explotada",
+    "assemble": "Armar",
+    "hints": {
+      "rotate": "Arrastra para rotar",
+      "zoom": "Scroll para zoom",
+      "click": "Click en un hotspot"
+    },
+    "components": {
+      "cpu": {
+        "category": "CPU",
+        "model": "Intel Core Ultra 7 265KF",
+        "spec": "20 núcleos (8P + 12E) · hasta 5.5 GHz · LGA 1851 · 125W",
+        "whyLong": [
+          "Arquitectura Arrow Lake — la generación más nueva, lanzada a fines de 2024.",
+          "Núcleos suficientes para correr VMs, IDE y ML en paralelo sin ahogarse.",
+          "La variante KF no trae iGPU — más barata porque ya tengo GPU dedicada.",
+          "Base para un laboratorio serio de CompTIA A+ Core 1: la configuro yo mismo en BIOS."
+        ]
+      },
+      "gpu": {
+        "category": "GPU",
+        "model": "NVIDIA GeForce RTX 5060 Ti (8GB)",
+        "spec": "Blackwell · 8GB GDDR7 · DLSS 4 · CUDA para ML",
+        "whyLong": [
+          "Núcleos CUDA que efectivamente uso para experimentos de ML y proyectos de CV.",
+          "DLSS 4 mantiene 1440p fluido sin pagar por un buque insignia.",
+          "8GB de VRAM es el sweet spot honesto para los workloads que hago hoy.",
+          "Espacio en el case + margen de fuente permiten un upgrade futuro sin rearmar todo."
+        ]
+      },
+      "motherboard": {
+        "category": "Motherboard",
+        "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+        "spec": "Chipset B860 · LGA 1851 · DDR5 · MicroATX · Wi-Fi 7",
+        "whyLong": [
+          "Calidad de construcción TUF — pensada para uptime largo y térmica estable.",
+          "B860 soporta el Core Ultra 200S en stock, justo lo que corro.",
+          "Wi-Fi 7 y Bluetooth 5.4 nativos, sin tarjetas extra.",
+          "MicroATX mantiene el airflow limpio sin sacrificar features."
+        ]
+      },
+      "ram": {
+        "category": "Memoria",
+        "model": "32GB DDR5",
+        "spec": "Dual channel · Margen para 64/96GB después",
+        "whyLong": [
+          "32GB es donde VMs, IDEs, Docker y Chrome dejan de pelearse.",
+          "El ancho de banda de DDR5 aparece de verdad en los build times y en la iteración ML.",
+          "Dos DIMMs ocupados, dos libres — camino de upgrade limpio sin cambiar kits."
+        ]
+      },
+      "storage": {
+        "category": "Almacenamiento",
+        "model": "SSD NVMe 2TB",
+        "spec": "PCIe Gen 4 · Boot + código + VMs en un solo disco",
+        "whyLong": [
+          "El boot, el código y la I/O de las VMs nunca se sienten como cuello de botella.",
+          "Un solo disco alcanza para OS + toolchain + modelos + juegos sin presión de limpieza.",
+          "PCIe Gen 4 es el sweet spot honesto en B860 — Gen 5 no valía el sobreprecio."
+        ]
+      },
+      "cooler": {
+        "category": "Refrigeración CPU",
+        "model": "Cooler de aire (tower)",
+        "spec": "Refrigeración por aire · Curvas de fan en BIOS",
+        "whyLong": [
+          "Aire en vez de líquida: sin bomba ni refrigerante, nada que pueda fallar y llevarse el CPU.",
+          "Junto a los 7 fans del case mantiene al chip serie K dentro de su envelope térmico.",
+          "Curvas de fan ajustadas en BIOS: silencioso en idle, sube solo cuando las temps lo justifican."
+        ]
+      },
+      "psu": {
+        "category": "Fuente",
+        "model": "850W 80+ Gold",
+        "spec": "850W · 80+ Gold · Modular",
+        "whyLong": [
+          "Eficiente a cargas típicas, así se mantiene fresca y silenciosa.",
+          "850W deja margen real para un upgrade de GPU más grande a futuro.",
+          "Cableado modular = airflow limpio dentro del case."
+        ]
+      },
+      "case": {
+        "category": "Case",
+        "model": "ARMOURY CG530",
+        "spec": "Mid Tower · 7 ventiladores ARGB de 120mm · Vidrio templado",
+        "whyLong": [
+          "7 fans ARGB de fábrica — el airflow viene ya calibrado.",
+          "Panel lateral de vidrio templado — se ven las partes que elegí.",
+          "Espacio para una GPU más grande y un cooler de aire alto sin espagueti de cables."
+        ]
+      },
+      "wireless": {
+        "category": "Conectividad",
+        "model": "Wi-Fi 7 + Bluetooth 5.4",
+        "spec": "Canales de 320 MHz · Periféricos de baja latencia",
+        "whyLong": [
+          "Estándares más recientes, nativos en la mother — sin dongles.",
+          "Wi-Fi 7 me deja mover archivos grandes a mis otras máquinas sin esperar.",
+          "Bluetooth 5.4 mantiene teclado, mouse y audífonos estables."
+        ]
+      },
+      "os": {
+        "category": "Sistema Operativo",
+        "model": "Windows 11 Pro",
+        "spec": "Hyper-V · BitLocker · Group Policy",
+        "whyLong": [
+          "Hyper-V para virtualización extra sobre VMware / VirtualBox.",
+          "BitLocker para cifrado real de disco completo en el drive de trabajo.",
+          "Group Policy Editor es práctica hands-on real para soporte IT."
+        ]
+      }
+    }
+  },
+  "rig": {
+    "title": "The Rig",
+    "subtitle": "ARMOURY Vanguard I-358 — mi workstation diaria. Cada parte elegida a propósito.",
+    "buildName": "ARMOURY Vanguard I-358",
+    "buildTag": "Daily driver · Tuneada por mí",
+    "story": {
+      "title": "Por qué este build",
+      "text": "Quería una workstation que pudiera hacer todo lo que realmente me importa: compilar código, correr varias máquinas virtuales al mismo tiempo, jugar con LLMs locales y TensorFlow, editar video, hostear experimentos de game dev y sí — jugar. Y quería hacerlo hands-on: elegir cada parte, entender qué hace cada una, y saber cómo mantenerla cuando algo falle. Este build es mi daily driver, mi lab de práctica para CompTIA A+ y la máquina en la que corrí mis proyectos de hackathon. Cada componente fue elegido por una razón. Haz click en cualquier tarjeta para verla.",
+      "quickStats": "Specs rápidas",
+      "clickPrompt": "Haz click en cualquier componente para ver el razonamiento completo"
+    },
+    "components": {
+      "cpu": {
+        "category": "CPU",
+        "model": "Intel Core Ultra 7 265KF",
+        "spec": "20 núcleos (8P + 12E) · hasta 5.5 GHz · LGA 1851",
+        "whyShort": "Última gen Arrow Lake. Suficientes núcleos para correr VMs, IDEs y ML al mismo tiempo sin ahogarse.",
+        "whyLong": [
+          "Arquitectura Intel Arrow Lake de última generación — un upgrade real sobre las generaciones anteriores de Core i7.",
+          "20 núcleos (8 Performance + 12 Efficient) me permiten correr varias VMs, un IDE, navegadores y un dev server en paralelo.",
+          "El sufijo K significa que está desbloqueado — puedo practicar tuning de CPU como parte de mi trabajo hands-on de CompTIA A+.",
+          "El sufijo F remueve la GPU integrada, lo que baja costo y calor porque de todas formas tengo una GPU dedicada.",
+          "El socket LGA 1851 me da un upgrade path limpio hacia futuros chips Intel Core Ultra sin rearmar."
+        ]
+      },
+      "gpu": {
+        "category": "GPU",
+        "model": "NVIDIA GeForce RTX 5060 Ti (8GB)",
+        "spec": "Arquitectura Blackwell · 8GB GDDR7 · DLSS 4 · CUDA para ML",
+        "whyShort": "Blackwell + CUDA. Buen balance para dev, experimentos de ML y gaming a 1440p sin gastar en una flagship.",
+        "whyLong": [
+          "Arquitectura Blackwell (serie RTX 50) — el silicio más nuevo de NVIDIA al momento del build.",
+          "Los núcleos CUDA importan para el lado ML de mi trabajo: TensorFlow, PyTorch e inferencia de LLMs locales.",
+          "DLSS 4 hace que gaming a 1440p con alto refresh sea realista sin subir a una RTX 5080 o 5090.",
+          "8GB GDDR7 son suficientes para los modelos y cargas que realmente corro — no persigo números de spec sheet que no usaría.",
+          "Consumo razonable que combina limpio con la PSU de 850W y deja headroom para un upgrade futuro."
+        ]
+      },
+      "motherboard": {
+        "category": "Motherboard",
+        "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+        "spec": "Chipset B860 · LGA 1851 · DDR5 · MicroATX · Wi-Fi 7 nativo",
+        "whyShort": "Durabilidad ASUS TUF + chipset B860. La board corre la Core Ultra 200S estable en stock, que es exactamente lo que mis cargas necesitan.",
+        "whyLong": [
+          "Calidad de construcción ASUS TUF Gaming — caps military-grade, slot PCIe reforzado y un diseño VRM probado para cargas sostenidas.",
+          "El chipset B860 soporta toda la serie Intel Core Ultra 200S en LGA 1851 — encaje perfecto para mi Ultra 7 265KF a velocidad de stock.",
+          "Wi-Fi 7 y Bluetooth 5.4 nativos — sin cards adicionales ocupando un slot PCIe.",
+          "Form factor MicroATX encaja limpio en el mid-tower CG530 sin desperdiciar espacio ni airflow.",
+          "Trade-off inteligente: no hago overclock a workloads de producción, así que pagar por Z890 hubiera sido desperdicio. B860 deja presupuesto para cooling, PSU y case fans que sí ayudan."
+        ]
+      },
+      "ram": {
+        "category": "Memoria",
+        "model": "32GB DDR5",
+        "spec": "Dual channel · Espacio para crecer a 64 o 96 GB",
+        "whyShort": "32GB es el sweet spot para correr VMs, IDEs, navegadores y Docker sin nunca tocar swap.",
+        "whyLong": [
+          "32GB cubre cómodamente mi workflow diario: dos VMs, VS Code, varias docenas de tabs y containers Docker en background.",
+          "El ancho de banda de memoria DDR5 realmente importa para compilación y pipelines de datos de ML — diferencia medible.",
+          "Configuración dual-channel para mantener el throughput de memoria alto.",
+          "Upgrade path a 64GB o 96GB cuando el trabajo con LLMs locales crezca más allá de lo que 32GB puede sostener.",
+          "Configurada con perfiles XMP / EXPO para poder practicar tuning de memoria como parte del estudio de CompTIA A+."
+        ]
+      },
+      "storage": {
+        "category": "Almacenamiento",
+        "model": "SSD NVMe 2TB",
+        "spec": "PCIe Gen 4 · Boot + código + VMs en un solo drive",
+        "whyShort": "2TB NVMe es lo suficientemente rápido para que boot, build y I/O de VMs nunca se sientan como el cuello de botella.",
+        "whyLong": [
+          "2TB alcanzan para Windows, mi toolchain de dev, varias imágenes de VM, mi biblioteca de Steam y modelos ML locales — sin malabares.",
+          "Las velocidades read/write de NVMe mantienen boot, builds de proyectos y transferencias de archivos ágiles.",
+          "Un drive primario limpio para empezar, con espacio para agregar drives secundarios más adelante sin reparticionar.",
+          "Sin partes móviles — sin riesgo de latencia de spin-up de HDD ni fallas mecánicas durante training runs largos.",
+          "Suficiente headroom para mantener múltiples VMs Windows y Linux vivas para práctica de CompTIA A+."
+        ]
+      },
+      "cooler": {
+        "category": "Cooling de CPU",
+        "model": "Cooler de aire (tower)",
+        "spec": "Refrigeración por aire · Curvas de fan en BIOS",
+        "whyShort": "Aire a propósito: sin bomba, sin refrigerante, nada que gotee. Fácil de mantener y sostiene las temps que necesito.",
+        "whyLong": [
+          "El Core Ultra 7 265KF está desbloqueado y genera calor real bajo cargas sostenidas de compilación o training de ML.",
+          "Un tower de aire más los fans de intake y exhaust del CG530 lo mantienen dentro de su envelope térmico.",
+          "Sin bomba ni circuito de líquido hay un punto de falla menos en una máquina de la que dependo a diario.",
+          "Más fácil de mantener: limpiar polvo o reasentar el cooler es cosa de 10 minutos, no un rebuild.",
+          "Curvas de fan ajustadas en la BIOS: casi silencioso en idle, sube solo cuando las temps realmente lo justifican."
+        ]
+      },
+      "psu": {
+        "category": "Fuente de poder",
+        "model": "850W 80+ Gold",
+        "spec": "850W · Certificada 80+ Gold · Modular",
+        "whyShort": "850W 80+ Gold me da headroom limpio y eficiente — suficiente para un upgrade futuro de GPU sin tocar el lado de poder.",
+        "whyLong": [
+          "Eficiencia 80+ Gold — menos calor, menos energía desperdiciada, operación más silenciosa bajo carga.",
+          "850W está cómodamente por encima de lo que consumen el Ultra 7 265KF + RTX 5060 Ti actuales, así tengo headroom real.",
+          "Ese headroom es a propósito: puedo meter una RTX 5070 Ti o superior más adelante sin tocar la PSU.",
+          "Cableado modular mantiene el build limpio y el airflow predecible dentro del CG530.",
+          "Una de las partes en las que nunca quiero escatimar — una PSU mala se lleva a todo el resto con ella."
+        ]
+      },
+      "case": {
+        "category": "Case",
+        "model": "ARMOURY CG530",
+        "spec": "Mid Tower · 7× 120mm ARGB fans · Tempered glass",
+        "whyShort": "Mid-tower con 7 fans ARGB de fábrica. Airflow serio, espacio para upgrades, y sí — se ve el papel.",
+        "whyLong": [
+          "ARMOURY CG530 mid-tower — el chassis Vanguard signature de este build.",
+          "Viene con 7 × 120mm ARGB fans de fábrica — intake frontal, exhaust superior y trasero ya afinados.",
+          "Layout interno airflow-first mantiene las térmicas sostenidas de CPU y GPU controladas bajo cargas reales.",
+          "Suficiente clearance para un cooler de aire alto, una GPU full-size, y cualquier card más larga a futuro.",
+          "Panel lateral de tempered glass — mayormente estético, parcialmente práctico (detecto polvo y issues de cableado de un vistazo)."
+        ]
+      },
+      "wireless": {
+        "category": "Wireless",
+        "model": "Wi-Fi 7 + Bluetooth 5.4",
+        "spec": "Canales de 320 MHz · Periféricos de baja latencia",
+        "whyShort": "Estándares más nuevos de Wi-Fi y Bluetooth, nativos en la motherboard. Sin dongles, sin compromisos.",
+        "whyLong": [
+          "Wi-Fi 7 para throughput future-proof — banda de 6 GHz, canales de 320 MHz, muy por encima de lo que ofrecía Wi-Fi 6E.",
+          "Bluetooth 5.4 para periféricos confiables y de baja latencia (headset, mouse, teclado, controller).",
+          "Nativo en la motherboard, así que ningún PCIe card ni dongle USB ocupa un slot.",
+          "Lo suficientemente bueno para que nunca necesite pasar un cable Ethernet por la habitación para llegar a velocidades reales.",
+          "Una cosa menos que troubleshootear cuando la red actúa raro — simplemente está ahí."
+        ]
+      },
+      "os": {
+        "category": "Sistema Operativo",
+        "model": "Windows 11 Pro",
+        "spec": "Hyper-V · BitLocker · Group Policy",
+        "whyShort": "Tier Pro porque uso los extras: Hyper-V para VMs, BitLocker para encriptación, GPO para práctica de IT.",
+        "whyLong": [
+          "Hyper-V me permite spin-up VMs Windows y Linux directamente sin necesitar VMware o VirtualBox para tests rápidos.",
+          "Encriptación de drives con BitLocker — práctica de seguridad real, no un checkbox que ignoro.",
+          "Group Policy Editor me da un entorno adecuado para practicar el tipo de admin work que vería en un trabajo de IT.",
+          "Soporte de Remote Desktop (RDP) mucho mejor que Home, lo cual importa cuando accedo a esta máquina desde otra red.",
+          "Encaja más naturalmente con los entornos Windows Pro / Enterprise que la mayoría de workplaces canadienses usan."
+        ]
+      }
+    },
+    "modal": {
+      "closeLabel": "Cerrar",
+      "whyTitle": "Por qué elegí esto",
+      "specLabel": "Spec"
+    }
+  },
+  "projects": {
+    "title": "Proyectos y Builds",
+    "tag": "Trabajo seleccionado",
+    "subtitle": "Software que envié a producción, hardware que armé, y el cert que estoy persiguiendo",
+    "pcBridge": "Workstation diaria — explórala en 3D",
+    "featuredProjects": "Spotlight",
+    "archiveTitle": "El resto de la red",
+    "sections": {
+      "workTitle": "Trabajo",
+      "workLabel": "Cliente, freelance, producción",
+      "studioTitle": "Estudio",
+      "studioLabel": "Hacks, hardware, hackathons, art-tech",
+      "credentialsTitle": "Credenciales",
+      "credentialsLabel": "Certificaciones en curso"
+    },
+    "filters": {
+      "all": "Todo",
+      "web": "Web",
+      "mobile": "Mobile",
+      "ai": "IA / ML",
+      "it": "IT / Sistemas",
+      "devops": "Cloud / DevOps"
+    },
+    "viewDetails": "Click para ver detalles",
+    "openLiveDemo": "Abrir live demo",
+    "visitWebsite": "Visitar sitio",
+    "viewCode": "Ver código",
+    "liveDemo": "Demo",
+    "keyFeatures": "Lo que hice",
+    "challengesSolutions": "Situación y enfoque",
+    "challenges": "Situación:",
+    "solution": "Cómo lo abordé:",
+    "technologiesUsed": "Herramientas y habilidades",
+    "closeModal": "Cerrar",
+    "secuApp": {
+      "title": "SecuApp — App móvil con AWS",
+      "description": "App móvil React Native con backend en AWS. Manejo trabajo end-to-end: UI móvil, cambios de API en el backend, exportaciones a Excel y comunicación directa con el cliente.",
+      "details": {
+        "overview": "SecuApp es una app móvil para un cliente real, con backend hospedado en AWS. Entré como software engineer freelance y manejo la entrega de features de punta a punta: React Native en el front, ajustes en el backend, y comunicación directa con el cliente.",
+        "features": [
+          "Construí features en React Native que reflejan el workflow real del cliente",
+          "Depuré y arreglé fallos de exportación a Excel en distintos escenarios de datos",
+          "Implementé flujos de cuenta de usuario, permisos y accesos",
+          "Coordinación directa con el cliente para requerimientos, updates y timeline",
+          "Mantuve estable el backend en AWS con uso diario",
+          "Organicé almacenamiento digital y outputs de reportes usados a diario"
+        ],
+        "challenges": [
+          "Los exports a Excel fallaban de forma inconsistente según la forma de los datos",
+          "La app tenía que ser confiable para uso diario, no solo verse bien en demo",
+          "Cliente no técnico, así que había que explicar trade-offs en lenguaje simple"
+        ],
+        "solution": [
+          "Reproduje los fallos con datos representativos y arreglé los edge cases subyacentes",
+          "Agregué validaciones defensivas alrededor del input y de los paths de generación de archivos",
+          "Updates semanales en lenguaje simple para que el cliente pudiera tomar decisiones informadas"
+        ]
+      }
+    },
+    "elContador": {
+      "title": "El Contador EC — Full-Stack + Despliegue en AWS",
+      "description": "Sitio de e-commerce para un negocio de servicios contables, entregado end-to-end: front-end React, despliegue en AWS (EC2, S3, Route 53, IAM), DNS y workflows admin.",
+      "details": {
+        "overview": "El Contador EC necesitaba presencia web completa y no tenía equipo técnico interno. Diseñé, construí y desplegué todo solo: front-end React, infraestructura AWS, DNS, flujos admin y soporte post-lanzamiento.",
+        "features": [
+          "Front-end React con layout responsivo y estructura de componentes limpia",
+          "Desplegado en AWS EC2 con S3 para assets estáticos y Route 53 para DNS",
+          "Configuré políticas IAM con least-privilege",
+          "Setup de dominio propio, HTTPS y ruteo de email",
+          "Construí workflows admin y permisos para que el cliente gestione el sitio",
+          "Soporte continuo y ajustes después del lanzamiento"
+        ],
+        "challenges": [
+          "Cliente no técnico: las decisiones de infraestructura tenían que aportar valor real",
+          "La integración de pagos necesitaba cuidado con compliance y proveedores",
+          "Presupuesto pequeño obligaba a justificar cada servicio de AWS"
+        ],
+        "solution": [
+          "Elegí EC2 + S3 + Route 53 como baseline aburrido y bien documentado",
+          "Restringí permisos IAM desde el inicio en vez de abrir cosas después",
+          "Mantuve el stack lo suficientemente simple para dejar documentación que el cliente pueda seguir"
+        ]
+      }
+    },
+    "ganpi": {
+      "title": "GANPI — CLI + Gemini API (1er lugar, StormHacks 2025)",
+      "demo": {
+        "live": "Sandbox en vivo",
+        "title": "GANPI — pruébalo ahora",
+        "subtitle": "Escribe lo que quieres en inglés simple. GANPI lo traduce a un comando de shell, lo marca como safe / warn / blocked y solo lo corre si tú apruebas.",
+        "placeholder": "ej. list all files, find every pdf, how much disk space am I using…",
+        "translate": "Traducir",
+        "approve": "Aprobar y correr",
+        "verdicts": {
+          "safe": "safe",
+          "info": "clarify",
+          "warn": "confirm",
+          "blocked": "blocked"
+        },
+        "footNote": "Este sandbox usa la misma capa de intent + safety que va delante de Gemini en el CLI real. Comandos peligrosos como rm -rf, chmod 777 o shutdown son bloqueados o requieren confirmación antes de llegar al shell."
+      },
+      "description": "Herramienta CLI que convierte inglés natural en comandos de shell seguros usando la API de Google Gemini. Escrita en C++. 1er lugar en StormHacks 2025.",
+      "details": {
+        "overview": "GANPI es una herramienta de línea de comandos que te permite describir lo que quieres en lenguaje natural y te devuelve un comando de shell seguro. Construida en 36 horas durante StormHacks 2025 con un equipo de cuatro. Ganamos el 1er lugar.",
+        "features": [
+          "CLI en C++ con parseo limpio de argumentos y manejo de errores",
+          "Integra la API de Google Gemini para entendimiento de lenguaje natural",
+          "Filtra comandos peligrosos antes de ejecutarlos",
+          "Build cross-platform con instrucciones claras de instalación",
+          "Demo y README pulidos para los jueces"
+        ],
+        "challenges": [
+          "Deadline de 36 horas con equipo de 4 personas: coordinación importaba tanto como el código",
+          "El output del LLM tenía que ser filtrado para no darle al usuario un footgun",
+          "La demo tenía que verse pulida, no solo funcionar"
+        ],
+        "solution": [
+          "Definí un demo mínimo el día uno y trabajé hacia atrás",
+          "Agregué una capa allowlist / denylist entre el output del modelo y el shell",
+          "Ensayé la demo antes de presentar a los jueces"
+        ]
+      }
+    },
+    "spikeConnect": {
+      "title": "SpikeConnect — App comunitaria React Native",
+      "description": "App móvil React Native para la comunidad de voleibol: perfiles de jugadores, ratings de habilidad, historial de partidos y gestión de eventos. Ganador en DreamHacks 2025.",
+      "details": {
+        "overview": "SpikeConnect es una app comunitaria React Native para jugadores de voleibol: perfiles, ratings, gestión de eventos e historial de partidos. Construida en modo hackathon con un equipo pequeño.",
+        "features": [
+          "Perfiles de jugadores, ratings e historial de partidos",
+          "Flujos de gestión de eventos y equipos",
+          "UI React Native con navegación y formularios reales",
+          "Integración con APIs REST para persistencia de datos",
+          "Modelo de datos diseñado para crecer más allá del scope del hackathon"
+        ],
+        "challenges": [
+          "El tiempo del hackathon obligó a un scope brutalmente ajustado",
+          "La UI React Native tenía que verse terminada, no de prototipo",
+          "El equipo tenía que consensuar un modelo de datos rápido"
+        ],
+        "solution": [
+          "Corté scope agresivamente el día uno hacia algo demoable y honesto",
+          "Adopté una librería de componentes compartida temprano para consistencia visual",
+          "Bloqueé el modelo de datos antes de dividir el trabajo front/back"
+        ]
+      }
+    },
+    "volleyGuard": {
+      "title": "VolleyGuard — Computer Vision en Mobile",
+      "description": "App móvil asistida por IA que analiza footage de voleibol. Front-end React Native con computer vision y procesamiento de video por debajo.",
+      "details": {
+        "overview": "VolleyGuard es un experimento para llevar computer vision al contexto deportivo. Front-end React Native con análisis asistido por IA de footage de partidos.",
+        "features": [
+          "App móvil React Native con captura y reproducción de video",
+          "Pipeline de computer vision para extraer información del juego",
+          "Integración de modelo AI/ML para el análisis",
+          "UX limpia y enfocada en un único loop central"
+        ],
+        "challenges": [
+          "El procesamiento de video en mobile es caro y drena batería",
+          "La precisión del modelo es un blanco móvil con datos de entrenamiento limitados"
+        ],
+        "solution": "Mantuve mínimo el trabajo on-device, delegué procesamiento pesado al server cuando pude, e iteré el modelo con footage real y no con muestras idealizadas."
+      }
+    },
+    "healthInsight": {
+      "title": "Health Insight — React Native + LLM local",
+      "description": "App móvil de health tracking con LLM local (Ollama) como backend para análisis privado y offline. Front-end React Native, servidor Node.js / Express.",
+      "details": {
+        "overview": "Health Insight explora cómo se ve una app de salud cuando el modelo corre localmente en vez de en la nube. Front-end React Native, backend Node.js y Express, Ollama para inferencia LLM local.",
+        "features": [
+          "UI móvil React Native con formularios y dashboards de health data",
+          "Backend Node.js y Express enrutando a una instancia local de Ollama",
+          "Inferencia LLM local para análisis con foco en privacidad",
+          "Diseño de API REST que mantiene móvil y servidor claramente separados"
+        ],
+        "challenges": [
+          "Correr un LLM localmente implica trade-offs de hardware y latencia",
+          "Los datos de salud son sensibles: la arquitectura tenía que reflejarlo desde el inicio"
+        ],
+        "solution": "Elegí una arquitectura local-first a propósito, mantuve fields sensibles fuera de la red cuando fue posible, y diseñé la API con límites claros para que futuros fallbacks a la nube sean aditivos, no rewrite."
+      }
+    },
+    "biomedicalML": {
+      "title": "Clasificación de rayos X caninos — Deep Learning (CMPT 340)",
+      "description": "Proyecto ML grupal en SFU (CMPT 340 Biomedical Computing). CNN entrenada sobre imágenes de rayos X veterinarios de perros para ayudar a marcar hallazgos anormales — un pipeline de imagen biomédica real, de punta a punta.",
+      "details": {
+        "overview": "Proyecto grupal para SFU CMPT 340 (Biomedical Computing). Construimos un pipeline de deep learning que toma imágenes de rayos X veterinarios de perros y clasifica hallazgos — convirtiendo lo que suele ser una tarea de screening lenta y solo para expertos en algo que puede pre-marcar casos para que un veterinario los revise. El proyecto tocó cada parte del loop de ML biomédico: preprocesamiento de imágenes, aumentación, diseño del modelo, entrenamiento, evaluación en casos no vistos, y reporte honesto de dónde el modelo era y no era confiable.",
+        "features": [
+          "CNN entrenada sobre imágenes de rayos X veterinarios de perros (dataset biomédico custom)",
+          "Pipeline de preprocesamiento: normalización, resize y aumentación (rotación, flip, contraste)",
+          "Modelo TensorFlow / Keras con transfer learning desde un backbone CNN pre-entrenado",
+          "Splits estratificados train / validation / test para mantener la evaluación honesta",
+          "Confusion matrices, precision/recall y accuracy por clase en el writeup",
+          "Scripts de entrenamiento reproducibles + model card documentada"
+        ],
+        "challenges": [
+          "Los datasets de imagen médica son pequeños, desbalanceados y caros de expandir — la aumentación tuvo que trabajar más duro",
+          "El overfitting es el failure mode default con datos limitados; la regularización importó desde el día uno",
+          "El proyecto grupal exigía que el pipeline fuera divisible sin colisiones entre cuatro personas"
+        ],
+        "solution": "Bloqueé el pipeline de imágenes y los splits temprano, elegí un backbone CNN pre-entrenado para sacarle valor a un dataset pequeño, agregué aumentación agresiva y dropout para pelear el overfitting, y dividí el trabajo en bordes limpios (pipeline de datos, modelo, evaluación, reporte) para que cada branch pudiera mergear sin pisarse con otra."
+      }
+    },
+    "mountainMadness": {
+      "title": "Mountain Madness — Chrome Extension + CV",
+      "description": "Extensión de Chrome que usa OpenCV y DeepFace para experimentos de computer vision en tiempo real dentro del navegador. Python + JavaScript, proyecto de hackathon.",
+      "details": {
+        "overview": "Mountain Madness es un proyecto de hackathon: una extensión de Chrome que experimenta con computer vision (OpenCV, DeepFace) integrada al contexto del navegador.",
+        "features": [
+          "Integración con la API de Chrome Extensions",
+          "Pipeline Python + JavaScript para tareas de computer vision",
+          "OpenCV para procesamiento de imágenes",
+          "DeepFace para análisis facial",
+          "Scope de hackathon enfocado"
+        ],
+        "challenges": [
+          "El modelo de seguridad de extensiones limita qué corres dónde",
+          "La latencia entre el contexto de la página y la inferencia tenía que sentirse invisible"
+        ],
+        "solution": "Dividí el trabajo entre lo que la extensión hace inline y lo que pasa off-page en un proceso ayudante, y mantuve la UX en un único flujo simple para que se sintiera intencional."
+      }
+    },
+    "tuSalud": {
+      "title": "TuSalud — Atención al paciente, records y automatización",
+      "description": "Rol multifuncional en una empresa de servicios médicos privados: lectura e interpretación de perfiles médicos, atención al cliente en español e inglés, gestión de records con acceso por roles y el pipeline en Python que automatizó lo peor del trabajo manual.",
+      "details": {
+        "overview": "TuSalud es una empresa de servicios médicos privados donde asumí varios roles a la vez. Leía e interpretaba perfiles médicos de pacientes, atendía consultas directamente, administraba records digitales con acceso por rol, y — como developer — construí el pipeline en Python que automatizó la parte más pesada de la oficina: parsear reportes médicos largos y generar resúmenes limpios en Excel. Este rol solo funcionaba si podía moverme entre las personas y el código sin dejar caer ninguno de los dos lados.",
+        "features": [
+          "Lectura e interpretación de perfiles médicos: fechas, resultados, rangos de referencia y valores marcados",
+          "Atención al paciente en español e inglés por teléfono, WhatsApp y correo",
+          "Gestión de records digitales para que cada rol viera solo lo que le correspondía — disciplina de records-management, no solo storage",
+          "Acceso por roles separando vistas administrativas, front desk y clínicas",
+          "Pipeline en Python (pandas + openpyxl) que lee reportes médicos largos y produce un resumen Excel formateado",
+          "Consolidación y validación cruzada de datos de pacientes entre fuentes con SQL y pandas",
+          "Estandarización de formatos inconsistentes entre laboratorios y marcado de entradas para seguimiento manual",
+          "Documenté SOPs internos para que el equipo administrativo pudiera seguir corriendo el pipeline sin mí"
+        ],
+        "challenges": [
+          "El puesto era mitad personas, mitad datos — dejar caer cualquiera de los dos rompía todo el workflow",
+          "Los formatos de reportes variaban entre laboratorios, un parser ingenuo no bastaba",
+          "Los datos son sensibles: el acceso tenía que estar bien acotado desde el día uno",
+          "El staff no técnico necesitaba un resumen escaneable, no un dump de datos crudos",
+          "Algunos pacientes llegaban ansiosos o apurados — la atención tenía que quedarse tranquila y clara"
+        ],
+        "solution": [
+          "Usé pandas para parseo flexible y normalización entre cada formato de reporte que vimos",
+          "Usé openpyxl para generar resúmenes en Excel que calzaban con los workflows existentes",
+          "Aseguré el acceso por rol desde el inicio en vez de abrir todo y limpiar después",
+          "Mantuve la atención al paciente cálida y en lenguaje claro — ser técnico no significa saltarse el lado humano",
+          "Validé outputs contra muestras manuales hasta que el equipo confió",
+          "Documenté el pipeline para que el equipo lo pudiera correr sobre cualquier lote nuevo sin preguntarme"
+        ]
+      }
+    },
+    "pcBuild": {
+      "title": "ARMOURY Vanguard I-358 — PC Build personalizada",
+      "description": "Mi workstation de todos los días. 10 componentes elegidos a propósito, afinados de punta a punta para código, VMs, experimentos de ML y gaming.",
+      "componentsTitle": "Los 10 componentes — y el porqué",
+      "components": {
+        "cpu": {
+          "category": "CPU",
+          "model": "Intel Core Ultra 7 265KF",
+          "spec": "20 núcleos (8P + 12E) · hasta 5.5 GHz · LGA 1851",
+          "whyShort": "La generación más nueva (Arrow Lake). Núcleos suficientes para correr VMs, IDEs y ML en paralelo sin ahogarse."
+        },
+        "gpu": {
+          "category": "GPU",
+          "model": "NVIDIA GeForce RTX 5060 Ti (8GB)",
+          "spec": "Blackwell · 8GB GDDR7 · DLSS 4 · CUDA para ML",
+          "whyShort": "CUDA + DLSS 4. Balance justo para dev, experimentos de ML y 1440p, sin pagar por un buque insignia."
+        },
+        "motherboard": {
+          "category": "Motherboard",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "spec": "Chipset B860 · LGA 1851 · DDR5 · MicroATX · Wi-Fi 7",
+          "whyShort": "Durabilidad TUF de ASUS + B860. Sostiene al Core Ultra 200S estable en stock — justo lo que necesitan mis workloads."
+        },
+        "ram": {
+          "category": "Memoria",
+          "model": "32GB DDR5",
+          "spec": "Dual channel · Margen para escalar a 64 o 96 GB",
+          "whyShort": "32GB es el sweet spot para VMs, IDEs y Docker sin caer al swap. DDR5 con ancho de banda real."
+        },
+        "storage": {
+          "category": "Almacenamiento",
+          "model": "SSD NVMe 2TB",
+          "spec": "PCIe Gen 4 · Boot + código + VMs en un solo disco",
+          "whyShort": "El boot, los builds y la I/O de las VMs nunca se sienten como cuello de botella. Espacio para OS + toolchain + modelos + juegos."
+        },
+        "cooler": {
+          "category": "Refrigeración CPU",
+          "model": "Cooler de aire (tower)",
+          "spec": "Refrigeración por aire · Curvas de fan en BIOS",
+          "whyShort": "Aire a propósito: sin bomba ni refrigerante. Maneja el envelope térmico de la serie K con el airflow del case."
+        },
+        "psu": {
+          "category": "Fuente",
+          "model": "850W 80+ Gold",
+          "spec": "850W · Certificación 80+ Gold · Modular",
+          "whyShort": "Eficiencia + margen real para un upgrade futuro de GPU. Es la pieza en la que nunca quiero escatimar."
+        },
+        "case": {
+          "category": "Case",
+          "model": "ARMOURY CG530",
+          "spec": "Mid Tower · 7 ventiladores ARGB de 120mm · Vidrio templado",
+          "whyShort": "7 fans ARGB de fábrica. Airflow primero, espacio para un cooler de aire alto + una GPU más grande a futuro."
+        },
+        "wireless": {
+          "category": "Conectividad",
+          "model": "Wi-Fi 7 + Bluetooth 5.4",
+          "spec": "Canales de 320 MHz · Periféricos de baja latencia",
+          "whyShort": "Últimos estándares nativos en la placa. Sin dongles ni un slot PCIe desperdiciado."
+        },
+        "os": {
+          "category": "Sistema Operativo",
+          "model": "Windows 11 Pro",
+          "spec": "Hyper-V · BitLocker · Group Policy",
+          "whyShort": "Versión Pro por los extras que uso: Hyper-V, BitLocker y GPO para práctica de IT."
+        }
+      },
+      "details": {
+        "overview": "ARMOURY Vanguard I-358 es mi workstation de todos los días. Elegí cada componente a propósito: suficiente headroom para código, VMs y experimentos de ML, silencioso para sesiones de dev de 12 horas, y con la complejidad hands-on justa para hacer doble función como laboratorio de práctica para CompTIA A+. Cada card de abajo muestra qué elegí y por qué."
+      }
+    },
+    "comptia": {
+      "title": "CompTIA A+ Core 1 — Autoestudio",
+      "description": "Preparándome activamente para la certificación CompTIA A+ Core 1 (220-1201). Estudio estructurado combinado con práctica real hands-on sobre mi workstation.",
+      "domainsTitle": "Los 5 dominios del examen",
+      "approachTitle": "Cómo me estoy preparando",
+      "details": {
+        "overview": "Estoy estudiando activamente para el examen CompTIA A+ Core 1 (220-1201). El objetivo es formalizar el conocimiento de hardware, redes, dispositivos móviles, virtualización y troubleshooting que ya uso todos los días. Cada dominio que cubre el examen lo practico sobre la máquina real que tengo en el escritorio.",
+        "domains": [
+          { "title": "Dispositivos Móviles", "body": "Laptops, tablets, celulares y accesorios. Configuración, conexiones y troubleshooting específico de móviles." },
+          { "title": "Redes", "body": "TCP/IP, DNS, DHCP, puertos y protocolos comunes, estándares Wi-Fi hasta Wi-Fi 7, hardware de red y cableado." },
+          { "title": "Hardware", "body": "CPUs, RAM, almacenamiento, motherboards, tarjetas de expansión y periféricos — y cómo encajan realmente en un build." },
+          { "title": "Virtualización y Cloud", "body": "Hipervisores, VMs y modelos de cloud. Practico en VMware Workstation y VirtualBox sobre mi propia máquina." },
+          { "title": "Troubleshooting de Hardware y Red", "body": "Diagnosticar fallas de forma metódica: verificar un componente a la vez, leer los logs reales, probar la solución." }
+        ],
+        "approach": [
+          "Lectura diaria y practice questions para fijar los datos críticos del examen.",
+          "Práctica hands-on en mi PC ARMOURY Vanguard — cada parte que estudié la puedo señalar físicamente.",
+          "Labs en vivo en VMware y VirtualBox para ensayar instalación de OS, imaging y troubleshooting de red.",
+          "Documentar mis errores conforme aparecen, igual que documentaría un ticket de soporte real.",
+          "Cruzar los objetivos del examen (220-1201) contra el trabajo real que he hecho en TuSalud, SecuApp y El Contador."
+        ]
+      }
+    },
+    "toolkit": {
+      "title": "Toolkit personal de automatización (Python + Bash)",
+      "description": "Práctica personal continua: scripts Python para generación de documentos, limpieza de datos y reportes. Utilidades en Bash / PowerShell. Uso diario de Git y GitHub.",
+      "details": {
+        "overview": "Fuera de trabajos formales mantengo un toolkit personal de pequeñas automatizaciones. Aquí es donde afilo skills: convertir trabajo manual y repetitivo en pipelines pequeños y confiables, y probar herramientas nuevas.",
+        "features": [
+          "Pipelines en Python para generar documentos Word y PDF con python-docx",
+          "Scripts de limpieza y estandarización de CSV / Excel",
+          "Utilidades en Bash y PowerShell para ajustes de workflow local",
+          "Práctica de SQL sobre bases de datos de side projects",
+          "Uso diario de Git y GitHub para hábitos de control de versiones"
+        ],
+        "challenges": [
+          "La automatización real tiene que ser confiable para que yo mismo la siga usando"
+        ],
+        "solution": "Mantener los scripts pequeños, legibles y probados con datos reales antes de confiar. Preferir pipelines aburridos y confiables sobre one-liners ingeniosos."
+      }
+    },
+    "pcWatchdog": {
+      "title": "PC Health Watchdog (Python + psutil + WMI)",
+      "description": "Daemon que loguea temperaturas de CPU/GPU, RAM, disco y RPM de fans cada 5 minutos en SQLite, y me manda un digest semanal en PDF con gráficos. Salta con alertas cuando un sensor cruza mis thresholds.",
+      "demo": {
+        "live": "Dashboard en vivo",
+        "title": "PC Health Watchdog — sala de control",
+        "subtitle": "Última muestra {{time}} · cadencia de 5 min · alertas por breach sostenido",
+        "trigger": "Disparar thermal event",
+        "triggerActive": "Simulando carga caliente…",
+        "tiles": {
+          "cpu": "CPU temp",
+          "gpu": "GPU temp",
+          "ram": "RAM usada",
+          "disk": "Disco usado"
+        },
+        "charts": {
+          "temperature": "Temperatura (últimas 8h)",
+          "utilization": "Utilización (últimas 8h)"
+        },
+        "alerts": {
+          "title": "Feed de alertas",
+          "empty": "Todos los sensores dentro de threshold. Nada que reportar.",
+          "entry": "sostenido en {{value}} > {{threshold}} por 3 muestras"
+        },
+        "footNote": "Este es el mismo dashboard que uso para inspeccionar mi workstation, corriendo con un dataset representativo aquí. El daemon Python en python-tools/pc-watchdog/ genera lo real directo sobre la máquina.",
+        "getCode": "Ver código"
+      },
+      "details": {
+        "overview": "Lo construí porque mi workstation ARMOURY Vanguard I-358 corre todo — dev, VMs, experimentos de ML, gaming — y quería la misma visibilidad sobre ella que un equipo IT real tiene sobre un servidor. Es un daemon pequeño en Python que samplea la máquina cada 5 minutos, escribe a SQLite, me manda un digest semanal en PDF y me pingea por Discord cuando se cruza un threshold. Misma disciplina que un stack de monitoreo real, escalada a un solo equipo.",
+        "features": [
+          "Samplea temperaturas de CPU/GPU, load por core, RAM, disk I/O y RPM de fans cada 5 minutos",
+          "Escribe cada muestra a SQLite para poder consultar tendencias semanas después, no solo el momento actual",
+          "Digest semanal en PDF con gráficos matplotlib: horas idle vs load, picos de temp, eventos de thermal throttle",
+          "Alertas por thresholds vía webhook de Discord: GPU > 82 °C, CPU > 90 °C o disk > 90 %",
+          "Corre como Scheduled Task de Windows así sobrevive reboots sin restart manual",
+          "CLI para consultas ad-hoc: `watchdog last 24h`, `watchdog peaks month`, `watchdog export csv`"
+        ],
+        "challenges": [
+          "La temperatura de GPU no la expone psutil en Windows — necesité un fallback",
+          "Samplear muy seguido metía ruido; muy poco perdía picos térmicos cortos",
+          "Las alertas tenían que ser útiles, no spammy — un minuto caliente aislado no es un problema",
+          "Todo tenía que ser aburrido y confiable, no un hobby que deja de correr en una semana"
+        ],
+        "solution": [
+          "Combiné psutil (CPU / RAM / disco / fan) con WMI + NVML para contadores específicos de GPU en Windows",
+          "Sampling cada 5 min con ráfagas de 30 s a demanda para sesiones de troubleshooting",
+          "Las alertas requieren breach sostenido (3 muestras seguidas) antes de disparar — sin ruido por spike aislado",
+          "Deployado como Scheduled Task con un health-check separado que me avisa si el daemon mismo se cae",
+          "Roté la SQLite mensualmente y guardé agregados para que el storage a largo plazo se mantenga chico"
+        ]
+      }
+    },
+    "jarvis": {
+      "title": "Jarvis — Asistente personal IA (Python, siempre activo)",
+      "description": "Un Jarvis de verdad. Dos aplausos en cualquier cuarto lo activan — sin teclado, sin terminal. En vez de una consola, un orbe circular translúcido se acopla al borde derecho de mi pantalla y reacciona en tiempo real a cada estado: idle, listening, thinking, speaking. Me saluda como 'sir' con voz neural y después escucha 'hey jarvis' para tomar comandos por voz: noticias, resultados de fútbol en vivo, stats del sistema, timers, control de medios, screenshots, chistes — todo offline-friendly, sin LLM, sin API keys.",
+      "details": {
+        "overview": "Jarvis es mi asistente personal, integrado a Windows para que se sienta más cerca del de Tony Stark que un chatbot. Un clap watcher en background (sounddevice + numpy) monitorea el mic 24/7 y lanza Jarvis cuando detecta dos picos de amplitud separados 150-1200 ms. Al arrancar Jarvis me llama 'sir' con voz neural de Microsoft Edge (edge-tts, 400+ voces), abre Spotify + Google, y entra a un loop wake-word escuchando 'hey jarvis'. Cada subsistema es offline-first o usa APIs públicas gratis — sin OpenAI, sin Anthropic, sin dependencia cloud, sin API keys.",
+        "features": [
+          "Aplauso-para-lanzar: dos aplausos en el cuarto despiertan a Jarvis aunque esté cerrado (servicio de Windows Startup)",
+          "HUD de orbe flotante (PySide6): círculo sin marco, translúcido, siempre encima — gradientes radiales + cónicos, arcos punteados que rotan, ondas de sonar al escuchar, pulsos tipo waveform al hablar, loader spinner al pensar",
+          "Wake word 'hey jarvis' con match por word-boundary y comandos inline ('hey jarvis, play blinding lights')",
+          "Voz neural vía edge-tts — Jenny, Aria, Michelle, Sonia, Dalia, Denise, etc. Toggle de idioma en runtime EN/ES/FR/UK",
+          "Modo 'sir': cada respuesta termina con el título configurado, insertado naturalmente antes de la puntuación",
+          "Noticias (Google News RSS, 7 tópicos + búsqueda libre) — 'news tech', 'what's happening in AI'",
+          "Fútbol en vivo (ESPN JSON, 12 ligas) — 'scores champions', 'scores la liga', 'scores peru'",
+          "Info del sistema vía psutil — batería, carga de CPU + GHz, RAM, disco, IP, SSID de Wi-Fi + señal",
+          "Control de audio real — volumen master get/set vía pycaw (IAudioEndpointVolume), media keys (play/pause/next/prev)",
+          "Timers, Pomodoro y recordatorios por voz sobre scheduler threaded — 'set a timer for 25 minutes', 'remind me in 30 min to stretch'",
+          "Screenshots al Desktop (respeta la redirección de OneDrive), chistes (JokeAPI), trivia (OpenTDB), clima (wttr.in)",
+          "Auto-pausa el listener mientras habla para no oírse a sí mismo (250 ms de gracia)"
+        ],
+        "challenges": [
+          "Detectar aplausos sin dispararse con voz, teclado o música — necesitaba filtrado por pico + timing + noise-floor",
+          "Evitar que el wake-word listener transcriba su propio TTS",
+          "Input concurrente por texto + voz en modo wake sin perder comandos ni bloquear el thread de audio",
+          "El TTS neural produce MP3; necesitaba un player ligero in-process que no abriera ventanas extra",
+          "Prevenir instancias duplicadas de Jarvis cuando el clap watcher se dispara varias veces",
+          "Comunicar threads no-Qt (wake listener, TTS) al event loop de Qt que pinta el HUD"
+        ],
+        "solution": [
+          "Máquina de estados del clap: 'idle' → 'one_clap' → verificar gap 150-1200 ms → disparar → cooldown 3s. Pico ≥ threshold, RMS < noise-floor entre aplausos",
+          "Voice.say() pausa el wake listener con threading.Event antes de reproducir, lo resume 250 ms después — sin loops de feedback",
+          "queue.Queue entre wake listener, thread de stdin y dispatcher — las fuentes de comandos se desacoplan del main loop",
+          "pygame.mixer reproduce los MP3 de edge-tts in-process. Fallback a SAPI5 Zira / Hazel / Helena si edge-tts no responde",
+          "PID lock file en %TEMP%; el clap watcher verifica con OpenProcess antes de lanzar. Auto-start silencioso vía .vbs + pythonw.exe",
+          "JarvisBridge (QObject) expone señales state_changed / transcript; los threads background emiten en ellas y Qt::QueuedConnection despacha los repaints al thread de la GUI — thread-safety gratis"
+        ]
+      },
+      "demo": {
+        "empty": "Elige un comando abajo. El orbe reacciona en tiempo real — escuchando, pensando y hablando, igual que en mi escritorio.",
+        "you": "tú",
+        "speak": "Hablar respuestas",
+        "note": "Esta es una demo web simplificada — intents por pattern-matching y APIs públicas gratis (Open-Meteo para clima, JokeAPI, OpenTDB). El Jarvis real corre local en Python: TTS con voz neural, wake word siempre activo, abre Spotify + apps, controla el volumen master, toma screenshots y arranca con dos aplausos en cualquier cuarto. Sigo mejorándolo — hooks a calendario + email y fallback completo con LLM son los próximos.",
+        "viewCode": "Ver código en GitHub",
+        "states": {
+          "idle": "standby",
+          "listening": "escuchando",
+          "thinking": "pensando",
+          "speaking": "hablando"
+        },
+        "chips": {
+          "time": "Qué hora es",
+          "weather": "Clima en Vancouver",
+          "joke": "Cuéntame un chiste",
+          "trivia": "Dame trivia",
+          "news": "Noticias · tech",
+          "cpu": "Carga de CPU",
+          "battery": "Batería",
+          "play": "Poner música",
+          "screenshot": "Tomar screenshot",
+          "volume": "Subir volumen"
+        }
+      }
+    },
+    "commonplace": {
+      "title": "Commonplace — ideas del canon global",
+      "description": "Una sala de lectura, no un feed. Una tesis de un libro canónico, el siglo que la hizo, un libro que le replica, y una pregunta que contestas. Lo que guardas vuelve.",
+      "details": {
+        "overview": "Commonplace enseña ideas de libros reconocidos a escala global e histórica — de Gilgamesh a Rawls, de la Gita a Achebe — sin volcar texto protegido. Cada ficha es una tesis original: argumento, contexto, un contrapunto, una pregunta. Los caminos sustituyen el scroll infinito; lo guardado regresa en este navegador.",
+        "features": [
+          "Una idea a la vez, no un feed para picar",
+          "Ocho caminos: poder, el yo, saber, justicia, naturaleza, libertad, Dios y el vacío, pueblo",
+          "Estante cronológico del canon, del barro al velo de ignorancia",
+          "Escribes una línea; queda en este navegador",
+          "Las ideas guardadas vuelven a los 2, 7, 21 días",
+          "Solo comentario original: el mapa de los libros, no la transcripción"
+        ],
+        "challenges": [
+          "Los productos tipo Deepstash optimizan el swipe, y eso pelea con la memoria",
+          "Pegar el libro es ilegal y es una forma perezosa de 'enseñar'",
+          "Un canon solo europeo no es un canon global"
+        ],
+        "solution": [
+          "Forzar profundidad: tesis + argumento + siglo + contrapunto + pregunta",
+          "Enseñar con comentario original y ficha bibliográfica, nunca extractos de la obra",
+          "Mesopotamia, China, India, el Magreb, Rusia, el Caribe, Latinoamérica y Occidente en el mismo estante"
+        ]
+      }
+    },
+    "faultBench": {
+      "title": "Fault Bench — bahía de diagnóstico",
+      "description": "Ocho máquinas rotas. El parte nombra un síntoma, nunca una causa. Visor de eventos, SMART, sondas, ping — un arreglo mal sumado cuesta horas y el LED sigue.",
+      "details": {
+        "overview": "Fault Bench es una mesa de servicio simulada al estilo CompTIA. Cada trabajo es un Windows con una causa raíz y varios anzuelos. Cada herramienta cobra minutos. Reinstalar Windows casi nunca es el primer movimiento.",
+        "features": [
+          "Ocho partes: DNS muerto, NVMe muriendo, pasta seca, DIMM malo, driver de GPU mixto, Kernel-Power 41, APIPA, reloj CMOS",
+          "Herramientas de oficio: Event Viewer, dispositivos, SMART, sondas, cmd, memtest, rails ATX, BIOS",
+          "Los arreglos malos se quedan malos — chkdsk no salva NAND, un RMA no arregla un Code 43",
+          "Reloj de labor y first-contact, guardados en este navegador",
+          "Identificar → probar → plan → implementar → verificar, como hábito de mesa, no como pregunta de test"
+        ],
+        "challenges": [
+          "Las apps de estudio IT caen en option a/b/c, que entrenan reconocimiento, no aislamiento",
+          "Un síntoma como “no hay internet” tiene seis capas; la UI tiene que dejar caminar OSI sin spoilear",
+          "Los fallos de hardware necesitan números que se sientan vivos o parecen flashcards"
+        ],
+        "solution": [
+          "Cada caso esconde la causa en una herramienta y planta un anzuelo en otra",
+          "Una terminal de red: ping 8.8.8.8 vs ping google.com es una lección que corres, no un párrafo",
+          "Las sondas tictaquean, el memtest avanza, el 12V se cae en carga — y luego eliges un arreglo y te quedas con él"
+        ]
+      }
+    }
+  },
+  "terminal": {
+    "tag": "Interactivo",
+    "title": "Abre una shell",
+    "subtitle": "Escribe un comando o toca un chip. Misma energía que sentarte en mi workstation.",
+    "boot1": "RG Systems CLI v1.0 — nodo Vancouver online",
+    "boot2": "Escribe 'help' para ver comandos.",
+    "hint": "Tip: prueba whoami, skills, pc, contact",
+    "unknown": "'{{cmd}}' no se reconoce. Escribe help.",
+    "openingPc": "Abriendo explorador de hardware...",
+    "help": [
+      "Comandos disponibles:",
+      "  help        — listar comandos",
+      "  whoami      — quién soy",
+      "  skills      — snapshot del stack",
+      "  experience  — resumen del timeline",
+      "  pc          — specs de la workstation",
+      "  contact     — cómo contactarme",
+      "  open pc     — saltar al build 3D",
+      "  clear       — limpiar pantalla"
+    ],
+    "whoami": [
+      "Raul Sebastian Gomero Calizaya",
+      "B.A.Sc. Computing Science — SFU",
+      "Código · sistemas · hardware · Metro Vancouver",
+      "EN / FR / ES"
+    ],
+    "skills": [
+      "Lenguajes: Python, JS/TS, C++, SQL",
+      "Apps: React, React Native, Node, Express",
+      "Cloud: AWS (EC2, S3, Route 53, IAM), Docker, Git",
+      "IT: Windows 11 Pro, Linux CLI, VMware, networking",
+      "Estudiando: CompTIA A+ Core 1 (220-1201)"
+    ],
+    "experience": [
+      "Work: SecuApp, TuSalud, El Contador, Grupo FJ, SFU Surge",
+      "Wins: StormHacks 2025 1er lugar (GANPI), DreamHacks winner",
+      "Educación: SFU Computing Science 2020–2025",
+      "Mira Experience para el Gantt completo."
+    ],
+    "pc": [
+      "ARMOURY Vanguard I-358",
+      "CPU  Ultra 7 265KF · GPU  RTX 5060 Ti 8GB",
+      "RAM  32GB DDR5 · SSD  2TB NVMe · PSU  850W Gold",
+      "Mobo ASUS TUF B860M-PLUS WIFI · OS  Win 11 Pro",
+      "Tip: corre 'open pc' para explorarla en 3D."
+    ],
+    "contact": [
+      "Email   rgomero05@gmail.com",
+      "Phone   +1 (778) 318-3933",
+      "Based   Canadá · abierto a híbrido / relocate"
+    ]
+  },
+  "boot": {
+    "shellBoot1": "RG Systems CLI v1.0 — nodo Vancouver online",
+    "shellBoot2": "Escribe un comando, o corre 'open' cuando estés listo.",
+    "shellHint": "Prueba: help · whoami · interests · skills · open",
+    "unknown": "'{{cmd}}' no se reconoce. Escribe help.",
+    "opening": "Opening Amazing Files...",
+    "enterHint": "entrar",
+    "enterAria": "Abrir el sitio",
+    "enterBtn": "Entrar al sitio",
+    "bootingUi": "Opening Amazing Files...",
+    "loadTitle": "Opening Amazing Files",
+    "loadReady": "Listo — saliendo en swing...",
+    "loadStatuses": [
+      "Levantando el stack web...",
+      "Montando perfil de hardware...",
+      "Indexando proyectos...",
+      "Calibrando spider-sense...",
+      "Casi listo..."
+    ],
+    "help": [
+      "Comandos:",
+      "  help       — esta lista",
+      "  whoami     — quién soy (tech + persona)",
+      "  interests  — vida offline",
+      "  skills     — snapshot tech",
+      "  open       — entrar al sitio"
+    ],
+    "whoami": [
+      "Raul Sebastian Gomero Calizaya",
+      "SFU Computing Science · Vancouver, Canadá",
+      "Tech: Full-stack, IT support, systems, AWS, builds de hardware",
+      "Stack: Python, JS/TS, React/RN, Node, C++, SQL, Windows/Linux",
+      "También: vóley, francés, boxeo, cocina, pelis y anime",
+      "Aplicando activamente a roles tech — feliz de hablar código o soporte."
+    ],
+    "interests": [
+      "Vóley — mi reset favorito y competencia",
+      "Francés — fluido, y orgulloso",
+      "Boxeo — acabo de empezar, ya enganchado",
+      "Cocina — Craft Beer Market, servicio a full",
+      "Pelis y anime — acción, romance, terror",
+      "Hardware — armé y tuneo mi propia PC"
+    ],
+    "skills": [
+      "Python · JS/TS · C++ · SQL",
+      "React / React Native · Node · AWS",
+      "Windows / Linux · VMware · networking",
+      "CompTIA A+ Core 1 — en estudio"
+    ]
+  },
+  "personal": {
+    "tag": "Fuera del reloj",
+    "title": "Personal",
+    "subtitle": "Lo que me hace yo — no solo los bullets del CV.",
+    "bridge": "",
+    "cards": [
+      { "id": "movies", "icon": "movies", "color": "#2dd4bf", "title": "Películas", "body": "Acción, thriller, drama. Entrena el ojo para el ritmo y la estructura — útil para escribir código legible." },
+      { "id": "boxing", "icon": "boxing", "color": "#f87171", "title": "Boxeo", "body": "Footwork, timing y calma cuando te están dando. Los mismos músculos que uso para debuggear bajo presión." },
+      { "id": "kitchen", "icon": "kitchen", "color": "#fbbf24", "title": "Cocina", "body": "Line cook en servicio pico. Velocidad, comms claras y adueñarte de tu estación — se traduce bien a on-call." },
+      { "id": "gaming", "icon": "gaming", "color": "#a78bfa", "title": "Gaming", "body": "Marvel Rivals y League of Legends. Coordinación en equipo, leer un sistema rápido y adaptarte cuando el plan se rompe." },
+      { "id": "training", "icon": "training", "color": "#34d399", "title": "Entrenamiento", "body": "Fuerza, cardio, movilidad. Reps consistentes fuera de pantalla — el mismo hábito que mantiene mis proyectos en movimiento." },
+      { "id": "homelab", "icon": "homelab", "color": "#38bdf8", "title": "Home lab", "body": "Workstation Windows 11 armada por mí, VMs en VMware y VirtualBox, servicios self-hosted chicos. Donde practico soporte IT con las manos." },
+      { "id": "learning", "icon": "learning", "color": "#fb923c", "title": "Aprender tech", "body": "CompTIA A+ Core 1 estudiando, MS-900 después. Tiempo fijo cada semana con tooling nuevo y fundamentos de IT." },
+      { "id": "music", "icon": "music", "color": "#e11d48", "title": "Guitarra y piano", "body": "Guitarra y piano casual en casa. Una manera tranquila de cambiar de contexto cuando la pantalla lleva demasiado tiempo prendida." }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "tag": "Contactar",
+    "stamp": "Disponible",
+    "subtitle": "Abierto a conversaciones de software, sistemas y soporte IT.",
+    "infoTitle": "Hablemos",
+    "infoDescription": "Si un proyecto, el build de la workstation o mi trayectoria te parecen un buen fit, me alegra leerte. El email es el mejor punto de partida.",
+    "followMe": "Perfiles",
+    "locationValue": "Vancouver, BC · abierto a híbrido / relocate",
+    "closing": "Basado en Vancouver · respuesta en 1–2 días hábiles",
+    "contactInfo": {
+      "email": "Email",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    }
+  },
+  "footer": {
+    "tagline": "Builder · sistemas · vida offline. Basado en Canadá.",
+    "quickLinks": "Enlaces rápidos",
+    "letsConnect": "Conectemos",
+    "letsConnectText": "¿Buscando a alguien que programe y también mantenga los sistemas? Hablemos.",
+    "startProject": "Contactar",
+    "madeWith": "Hecho con",
+    "copyright": "Hecho con",
+    "andCoffee": "en Vancouver, BC."
+  },
+  "language": {
+    "switch": "Idioma",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français"
+  }
+}
