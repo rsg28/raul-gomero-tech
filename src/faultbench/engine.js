@@ -16,15 +16,15 @@ export function fixById(caseObj, fixId) {
 
 export function applyFix(caseObj, fixId) {
   const fix = fixById(caseObj, fixId);
-  if (!fix) return { ok: false, minutes: 0, message: 'Ese arreglo no está en el cajón.' };
+  if (!fix) return { ok: false, minutes: 0, message: 'That fix is not in the drawer.' };
   if (fixId === caseObj.rootFix) {
     return {
       ok: true,
       minutes: fix.cost,
-      message: 'La máquina respira. Verifica con las mismas herramientas: la evidencia tiene que volverse verde.',
+      message: 'The machine is breathing. Verify with the same tools: the evidence has to turn green.',
     };
   }
-  const message = caseObj.wrong?.[fixId] || 'No cambió nada que importe. El síntoma sigue.';
+  const message = caseObj.wrong?.[fixId] || 'Nothing that matters changed. The symptom is still there.';
   return { ok: false, minutes: fix.cost, message };
 }
 
@@ -43,29 +43,32 @@ export function runNet(net, rawCmd) {
       lines: [
         'ipconfig        ipconfig /all',
         'ping HOST       nslookup HOST',
-        'Ejemplos: ping 8.8.8.8 · ping google.com · nslookup gmail.com',
+        'Examples: ping 8.8.8.8 · ping google.com · nslookup gmail.com',
       ],
     };
   }
 
   if (lower === 'ipconfig' || lower === 'ipconfig /all' || lower === 'ipconfig /all') {
     const lines = [
-      `Adaptador ${net.media}:`,
+      `${net.media} adapter:`,
       '',
-      `   Estado de medios. . . . . . : ${net.link ? 'Medios conectados' : 'Medios desconectados'}`,
-      `   Sufijo DNS específico. . .  : lan`,
-      `   Dirección física. . . . . . : ${net.mac || '—'}`,
-      `   DHCP habilitado . . . . . . : ${net.dhcp ? 'Sí' : 'No'}`,
-      `   Dirección IPv4. . . . . . . : ${net.ip}`,
-      `   Máscara de subred . . . . . : ${net.mask}`,
-      `   Puerta de enlace predet.. . : ${net.gw || '(no definida)'}`,
-      `   Servidores DNS. . . . . . . : ${net.dns.filter(Boolean).join(' , ') || '(ninguno)'}`,
+      `   Media State . . . . . . . . : ${net.link ? 'Media connected' : 'Media disconnected'}`,
+      `   Connection-specific DNS Suffix  : lan`,
+      `   Physical Address. . . . . . : ${net.mac || '—'}`,
+      `   DHCP Enabled. . . . . . . . : ${net.dhcp ? 'Yes' : 'No'}`,
+      `   IPv4 Address. . . . . . . . : ${net.ip}`,
+      `   Subnet Mask . . . . . . . . : ${net.mask}`,
+      `   Default Gateway . . . . . . : ${net.gw || '(none)'}`,
+      `   DNS Servers . . . . . . . . : ${net.dns.filter(Boolean).join(' , ') || '(none)'}`,
     ];
     if (net.staticLeftover) {
-      lines.push('', `   [nota] Perfil estático huérfano en el registro: ${net.staticLeftover}`);
+      lines.push('', `   [note] Orphan static profile in the registry: ${net.staticLeftover}`);
     }
     if (net.ip.startsWith('169.254')) {
-      lines.push('', '   [APIPA] 169.254.x.x — Windows no obtuvo DHCP. No hay ruta al router.');
+      lines.push('', '   [APIPA] 169.254.x.x — Windows got no DHCP. There is no route to the router.');
+    }
+    if (net.hostsNote) {
+      lines.push('', `   [hosts] ${net.hostsNote}`);
     }
     return { kind: 'ipconfig', lines };
   }
@@ -84,13 +87,13 @@ export function runNet(net, rawCmd) {
       return {
         kind: 'ping',
         lines: [
-          `Haciendo ping a ${ping[1]} con 32 bytes de datos:`,
-          `Tiempo de espera agotado para esta solicitud.`,
-          `Tiempo de espera agotado para esta solicitud.`,
-          `Tiempo de espera agotado para esta solicitud.`,
-          `Tiempo de espera agotado para esta solicitud.`,
+          `Pinging ${ping[1]} with 32 bytes of data:`,
+          `Request timed out.`,
+          `Request timed out.`,
+          `Request timed out.`,
+          `Request timed out.`,
           '',
-          `Estadísticas: Enviados = 4, Recibidos = 0, Perdidos = 4 (100% perdidos)`,
+          `Ping statistics: Sent = 4, Received = 0, Lost = 4 (100% loss)`,
         ],
       };
     }
@@ -98,13 +101,13 @@ export function runNet(net, rawCmd) {
     return {
       kind: 'ping',
       lines: [
-        rec.resolve ? `Haciendo ping a ${ping[1]} [${rec.resolve}] con 32 bytes de datos:` : `Haciendo ping a ${ip} con 32 bytes de datos:`,
-        `Respuesta desde ${rec.resolve || ip}: bytes=32 tiempo=${rec.ms}ms TTL=54`,
-        `Respuesta desde ${rec.resolve || ip}: bytes=32 tiempo=${rec.ms + 1}ms TTL=54`,
-        `Respuesta desde ${rec.resolve || ip}: bytes=32 tiempo=${rec.ms}ms TTL=54`,
-        `Respuesta desde ${rec.resolve || ip}: bytes=32 tiempo=${Math.max(1, rec.ms - 1)}ms TTL=54`,
+        rec.resolve ? `Pinging ${ping[1]} [${rec.resolve}] with 32 bytes of data:` : `Pinging ${ip} with 32 bytes of data:`,
+        `Reply from ${rec.resolve || ip}: bytes=32 time=${rec.ms}ms TTL=54`,
+        `Reply from ${rec.resolve || ip}: bytes=32 time=${rec.ms + 1}ms TTL=54`,
+        `Reply from ${rec.resolve || ip}: bytes=32 time=${rec.ms}ms TTL=54`,
+        `Reply from ${rec.resolve || ip}: bytes=32 time=${Math.max(1, rec.ms - 1)}ms TTL=54`,
         '',
-        `Estadísticas: Enviados = 4, Recibidos = 4, Perdidos = 0 (0% perdidos)`,
+        `Ping statistics: Sent = 4, Received = 4, Lost = 0 (0% loss)`,
       ],
     };
   }
@@ -113,36 +116,36 @@ export function runNet(net, rawCmd) {
   if (ns) {
     const host = hostKey(ns[1]);
     const rec = net.hosts[host];
-    const server = net.dns.filter(Boolean)[0] || '(ninguno)';
+    const server = net.dns.filter(Boolean)[0] || '(none)';
     if (net.nslookupNote && rec && rec.reason === 'nx') {
       return {
         kind: 'nslookup',
         lines: [
-          `Servidor:  UnKnown`,
+          `Server:  UnKnown`,
           `Address:  ${server}`,
           '',
           `DNS request timed out.`,
           `    timeout was 2 seconds.`,
-          `*** UnKnown no encontró ${ns[1]}: Non-existent domain`,
+          `*** UnKnown can't find ${ns[1]}: Non-existent domain`,
         ],
       };
     }
     if (!rec || rec.reason === 'nx' || !rec.resolve) {
       if (/^\d/.test(host)) {
-        return { kind: 'nslookup', lines: [`Servidor: ${server}`, `Address: ${server}`, '', `${ns[1]} es una IP. nslookup de un nombre, o usa ping.`] };
+        return { kind: 'nslookup', lines: [`Server: ${server}`, `Address: ${server}`, '', `${ns[1]} is an IP. nslookup a name, or use ping.`] };
       }
       return {
         kind: 'nslookup',
-        lines: [`Servidor:  ${server}`, `Address:  ${server}`, '', `*** no encontró ${ns[1]}: Non-existent domain`],
+        lines: [`Server:  ${server}`, `Address:  ${server}`, '', `*** can't find ${ns[1]}: Non-existent domain`],
       };
     }
     return {
       kind: 'nslookup',
-      lines: [`Servidor:  ${server}`, `Address:  ${server}`, '', `Nombre:  ${ns[1]}`, `Address:  ${rec.resolve}`],
+      lines: [`Server:  ${server}`, `Address:  ${server}`, '', `Name:    ${ns[1]}`, `Address: ${rec.resolve}`],
     };
   }
 
-  return { kind: 'unknown', lines: [`'${cmd}' no se reconoce. Escribe help.`] };
+  return { kind: 'unknown', lines: [`'${cmd}' is not recognized. Type help.`] };
 }
 
 export function emptySession(caseId) {

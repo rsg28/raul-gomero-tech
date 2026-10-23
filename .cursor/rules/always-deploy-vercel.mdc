@@ -1,0 +1,15 @@
+---
+description: Always publish website-tech changes to Vercel production
+alwaysApply: true
+---
+
+# Always deploy Fault Bench to Vercel
+
+After finishing Fault Bench work, publish to production without waiting to be asked. The app lives at `https://raul-gomero-tech.vercel.app/fault-bench` on the existing `raul-gomero-tech` project (same Vite app, `/fault-bench` route).
+
+Use the git-free temp copy (Vercel blocks this repo’s commit author):
+
+1. Copy `src`, `public`, `api`, `index.html`, `package.json`, `package-lock.json`, `vite.config.js`, `vercel.json`, and `.vercel/project.json` into `%TEMP%\rg-tech-deploy` (no `.git`, no `.env`).
+2. `npx vercel --prod --yes --archive=tgz --cwd` that folder.
+3. Confirm `https://raul-gomero-tech.vercel.app` is READY.
+4. Do not commit or push unless the user asked.

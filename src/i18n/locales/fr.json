@@ -1077,11 +1077,11 @@
     },
     "faultBench": {
       "title": "Fault Bench — baie de diagnostic",
-      "description": "Huit machines cassées. Le ticket nomme un symptôme, jamais une cause. Observateur d'événements, SMART, sondes, ping — un mauvais geste coûte des heures et la LED reste allumée.",
+      "description": "LeetCode pour l'IT. Tracks CompTIA (A+ Core 1/2, Network+, Security+) et un bureau General. Le ticket nomme un symptôme, jamais une cause.",
       "details": {
         "overview": "Fault Bench est un établi de réparation simulé, façon CompTIA. Chaque job est une boîte Windows avec une cause racine et plusieurs leurres. Chaque outil facture des minutes. Réinstaller Windows n'est presque jamais le premier geste.",
         "features": [
-          "Huit tickets : DNS mort, NVMe mourant, pâte sèche, DIMM HS, pilote GPU mélangé, Kernel-Power 41, APIPA, horloge CMOS",
+          "Tracks d'examen : A+ Core 1/2, Network+, Security+ (défense seulement) et General — tickets originaux, pas de dumps",
           "Outils de métier : Event Viewer, Gestionnaire de périphériques, SMART, sondes, cmd, memtest, rails ATX, BIOS",
           "Les mauvais gestes restent mauvais — chkdsk ne sauve pas le NAND, un RMA ne répare pas un Code 43",
           "Horloge de main-d'œuvre et first-contact, enregistrés dans ce navigateur",

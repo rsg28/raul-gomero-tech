@@ -1077,11 +1077,11 @@
     },
     "faultBench": {
       "title": "Fault Bench — service bay diagnostics",
-      "description": "Eight broken machines. The ticket names a symptom, never a cause. Event Viewer, SMART, probes, ping — a wrong fix costs hours and the LED stays on.",
+      "description": "LeetCode for IT. CompTIA tracks (A+ Core 1/2, Network+, Security+) plus a General desk. The ticket names a symptom, never a cause. A wrong fix costs hours.",
       "details": {
         "overview": "Fault Bench is a simulated repair bay for CompTIA-style troubleshooting. Each job is a real-feeling Windows box with one root cause and several red herrings. You pay in labor minutes for every tool you open. Reinstalling Windows is almost never the first move.",
         "features": [
-          "Eight tickets: dead DNS, dying NVMe, dried paste, bad DIMM, mixed GPU driver, Kernel-Power 41, APIPA, CMOS clock",
+          "Exam tracks: A+ Core 1/2, Network+, Security+ (defense only), plus General — original tickets, not dumps",
           "Tools that look like the job: Event Viewer, Device Manager, SMART, sensors, cmd (ipconfig/ping/nslookup), memtest, ATX rails, BIOS",
           "Wrong fixes stay wrong — chkdsk does not save NAND, RMA does not fix Code 43",
           "Labor clock and first-contact-resolution, saved in this browser",

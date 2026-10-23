@@ -1077,11 +1077,11 @@
     },
     "faultBench": {
       "title": "Fault Bench — bahía de diagnóstico",
-      "description": "Ocho máquinas rotas. El parte nombra un síntoma, nunca una causa. Visor de eventos, SMART, sondas, ping — un arreglo mal sumado cuesta horas y el LED sigue.",
+      "description": "LeetCode para IT. Tracks CompTIA (A+ Core 1/2, Network+, Security+) y un escritorio General. El parte nombra un síntoma, nunca una causa.",
       "details": {
         "overview": "Fault Bench es una mesa de servicio simulada al estilo CompTIA. Cada trabajo es un Windows con una causa raíz y varios anzuelos. Cada herramienta cobra minutos. Reinstalar Windows casi nunca es el primer movimiento.",
         "features": [
-          "Ocho partes: DNS muerto, NVMe muriendo, pasta seca, DIMM malo, driver de GPU mixto, Kernel-Power 41, APIPA, reloj CMOS",
+          "Tracks de examen: A+ Core 1/2, Network+, Security+ (solo defensa) y General — tickets originales, no dumps",
           "Herramientas de oficio: Event Viewer, dispositivos, SMART, sondas, cmd, memtest, rails ATX, BIOS",
           "Los arreglos malos se quedan malos — chkdsk no salva NAND, un RMA no arregla un Code 43",
           "Reloj de labor y first-contact, guardados en este navegador",

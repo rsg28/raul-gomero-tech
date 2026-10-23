@@ -11,7 +11,7 @@ export function EventLog({ lines }) {
   return (
     <div className="fb-tool">
       <div className="fb-tool__bar">
-        <span>Visor de eventos · Windows Logs</span>
+        <span>Event Viewer · Windows Logs</span>
         <div className="fb-seg">
           {['all', 'error', 'warn', 'info'].map((f) => (
             <button key={f} type="button" className={filter === f ? 'is-on' : ''} onClick={() => setFilter(f)}>
@@ -23,11 +23,11 @@ export function EventLog({ lines }) {
       <table className="fb-table">
         <thead>
           <tr>
-            <th>Hora</th>
-            <th>Nivel</th>
-            <th>Origen</th>
+            <th>Time</th>
+            <th>Level</th>
+            <th>Source</th>
             <th>ID</th>
-            <th>Mensaje</th>
+            <th>Message</th>
           </tr>
         </thead>
         <tbody>
@@ -51,8 +51,8 @@ export function DeviceManager({ devices }) {
   return (
     <div className="fb-tool">
       <div className="fb-tool__bar">
-        <span>Administrador de dispositivos</span>
-        <span className="fb-tool__ghost">{devices.filter((d) => d.status !== 'ok').length} con aviso</span>
+        <span>Device Manager</span>
+        <span className="fb-tool__ghost">{devices.filter((d) => d.status !== 'ok').length} with warning</span>
       </div>
       <ul className="fb-tree">
         {buses.map((bus) => (
@@ -89,7 +89,7 @@ export function SmartTable({ rows }) {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Atributo</th>
+            <th>Attribute</th>
             <th>Value</th>
             <th>Worst</th>
             <th>Thresh</th>
@@ -144,8 +144,8 @@ export function Sensors({ data }) {
   return (
     <div className="fb-tool">
       <div className="fb-tool__bar">
-        <span>Sondas · HWiNFO (sim)</span>
-        <span className="fb-tool__ghost">{data.load ? 'carga sintética ON' : 'idle'}</span>
+        <span>Sensors · HWiNFO (sim)</span>
+        <span className="fb-tool__ghost">{data.load ? 'synthetic load ON' : 'idle'}</span>
       </div>
       <div className="fb-gauges">
         {items.map((it) => (
@@ -156,13 +156,13 @@ export function Sensors({ data }) {
         ))}
       </div>
       {cpuHot && (
-        <p className="fb-callout">Throttle térmico: el clock cae para no freír el CCD. El cooler puede estar girando y aun así no tocar el IHS.</p>
+        <p className="fb-callout">Thermal throttle: the clock drops so the CCD does not fry. The cooler can be spinning and still not touch the IHS.</p>
       )}
     </div>
   );
 }
 
-export function NetTerm({ net }) {
+export function NetTerm({ net, onScreen }) {
   const [line, setLine] = useState('');
   const [hist, setHist] = useState(() => [runNet(net, 'ipconfig')]);
   const endRef = useRef(null);
@@ -176,6 +176,15 @@ export function NetTerm({ net }) {
     endRef.current?.scrollIntoView({ block: 'nearest' });
   }, [hist]);
 
+  useEffect(() => {
+    if (!onScreen) return;
+    const log = hist
+      .map((h) => [h.cmd ? `C:\\Users\\bench> ${h.cmd}` : '', ...(h.lines || [])].filter(Boolean).join('\n'))
+      .join('\n\n');
+    const notes = [net.sslNote, net.hostsNote].filter(Boolean).join('\n');
+    onScreen(notes ? `${log}\n\n${notes}` : log);
+  }, [hist, net.sslNote, net.hostsNote, onScreen]);
+
   const run = (cmd) => {
     const c = (cmd || line).trim();
     if (!c) return;
@@ -188,8 +197,9 @@ export function NetTerm({ net }) {
   return (
     <div className="fb-tool fb-term-wrap">
       <div className="fb-tool__bar">
-        <span>cmd · red</span>
+        <span>cmd · network</span>
         {net.sslNote && <span className="fb-pill fb-pill--bad">TLS</span>}
+        {net.hostsNote && <span className="fb-pill fb-pill--bad">hosts</span>}
       </div>
       <div className="fb-term" role="log">
         {hist.map((h, i) => (
@@ -205,6 +215,7 @@ export function NetTerm({ net }) {
           </div>
         ))}
         {net.sslNote && <p className="fb-term__note">{net.sslNote}</p>}
+        {net.hostsNote && <p className="fb-term__note">{net.hostsNote}</p>}
         <div ref={endRef} />
       </div>
       <form
@@ -215,14 +226,14 @@ export function NetTerm({ net }) {
         }}
       >
         <label className="fb-sr" htmlFor="fb-cmd">
-          Comando
+          Command
         </label>
         <span className="fb-term__ps">C:\&gt;</span>
         <input
           id="fb-cmd"
           value={line}
           onChange={(e) => setLine(e.target.value)}
-          placeholder="ipconfig, ping, nslookup — o un chip"
+          placeholder="ipconfig, ping, nslookup — or a chip"
           autoComplete="off"
           spellCheck={false}
         />
@@ -276,7 +287,7 @@ export function Memtest({ data }) {
       {done && (
         <p className={`fb-callout${data.errors ? ' is-bad' : ''}`}>
           {data.note}
-          {data.slot ? ` Slot acusado: ${data.slot}.` : ''}
+          {data.slot ? ` Accused slot: ${data.slot}.` : ''}
         </p>
       )}
     </div>
@@ -288,7 +299,7 @@ export function PowerPanel({ data }) {
   return (
     <div className="fb-tool">
       <div className="fb-tool__bar">
-        <span>Multímetro · rails ATX</span>
+        <span>Multimeter · ATX rails</span>
         {data.event41 && <span className="fb-pill fb-pill--bad">Event 41</span>}
       </div>
       <div className="fb-gauges">
@@ -300,7 +311,7 @@ export function PowerPanel({ data }) {
         ))}
         {['12V', '5V', '3.3V'].map((k) => (
           <div key={`${k}-l`} className={`fb-gauge${k === '12V' && sag ? ' is-hot' : ''}`}>
-            <span>{k} carga</span>
+            <span>{k} load</span>
             <strong>{data.loadRails[k].toFixed(2)} V</strong>
           </div>
         ))}
@@ -326,11 +337,11 @@ export function TimePanel({ data }) {
       <p className="fb-clock">{now}</p>
       <p className="fb-kv">
         Windows Time: <b className={data.service === 'running' ? 'ok' : 'bad'}>{data.service}</b>
-        {data.drift ? ` · drift ${data.drift} días` : ' · drift < 1 s'}
+        {data.drift ? ` · drift ${data.drift} days` : ' · drift < 1 s'}
       </p>
       {!data.ok && (
         <p className="fb-callout is-bad">
-          Un certificado con notBefore 2024 no existe todavía para un sistema que vive en 2019. Chrome no está loco.
+          A certificate with notBefore 2024 does not exist yet for a system living in 2019. Chrome is not crazy.
         </p>
       )}
     </div>
@@ -341,15 +352,15 @@ export function AudioPanel({ data }) {
   return (
     <div className="fb-tool">
       <div className="fb-tool__bar">
-        <span>mmsys.cpl · reproducción</span>
+        <span>mmsys.cpl · playback</span>
       </div>
       <ul className="fb-tree">
         {data.devices.map((d) => (
           <li key={d.name} className={d.enabled ? 'is-ok' : 'is-warn'}>
             <i className={`fb-bang is-${d.enabled ? 'ok' : 'warn'}`} />
             {d.name}
-            {d.def ? <em> predeterminado</em> : null}
-            {!d.enabled ? <em> deshabilitado</em> : null}
+            {d.def ? <em> default</em> : null}
+            {!d.enabled ? <em> disabled</em> : null}
           </li>
         ))}
       </ul>
@@ -363,7 +374,7 @@ export function BiosPanel({ data }) {
     <div className="fb-tool">
       <div className="fb-tool__bar">
         <span>POST · boot order</span>
-        <span className="fb-mono">código {data.post}</span>
+        <span className="fb-mono">code {data.post}</span>
       </div>
       <p className="fb-kv">Beep: {data.beep}</p>
       <ol className="fb-boot">
@@ -378,25 +389,115 @@ export function BiosPanel({ data }) {
   );
 }
 
-export function ToolSurface({ caseObj, toolId, resolved }) {
+export function TaskMgr({ data }) {
+  if (!data) return null;
+  const ramPct = Math.round((data.ramUsed / data.ramTotal) * 100);
+  return (
+    <div className="fb-tool">
+      <div className="fb-tool__bar">
+        <span>Task Manager · Performance</span>
+        <span className="fb-tool__ghost">{data.uptime || 'up'}</span>
+      </div>
+      <div className="fb-gauges">
+        <div className={`fb-gauge${data.cpu >= 85 ? ' is-hot' : ''}`}>
+          <span>CPU</span>
+          <strong>{data.cpu}%</strong>
+        </div>
+        <div className={`fb-gauge${ramPct >= 85 ? ' is-hot' : ''}`}>
+          <span>Memory</span>
+          <strong>
+            {data.ramUsed} / {data.ramTotal} GB
+          </strong>
+        </div>
+        <div className={`fb-gauge${data.disk >= 90 ? ' is-hot' : ''}`}>
+          <span>Disk</span>
+          <strong>{data.disk}%</strong>
+        </div>
+        <div className="fb-gauge">
+          <span>GPU</span>
+          <strong>{data.gpu}%</strong>
+        </div>
+      </div>
+      {data.diskFreeGb != null && (
+        <p className={`fb-callout${data.diskFreeGb < 10 ? ' is-bad' : ''}`}>
+          C: {data.diskFreeGb} GB free of {data.diskTotalGb} GB
+        </p>
+      )}
+      {data.virt && (
+        <p className={`fb-callout${/off|disabled/i.test(data.virt) ? ' is-bad' : ''}`}>
+          Virtualization: {data.virt}
+        </p>
+      )}
+      {data.note && <p className="fb-callout">{data.note}</p>}
+      <table className="fb-table">
+        <thead>
+          <tr>
+            <th>Process</th>
+            <th>CPU</th>
+            <th>Memory</th>
+            <th>Disk</th>
+          </tr>
+        </thead>
+        <tbody>
+          {(data.processes || []).map((p) => (
+            <tr key={p.name} className={p.hot ? 'is-error' : ''}>
+              <td>{p.name}</td>
+              <td>{p.cpu}%</td>
+              <td>{p.ram}</td>
+              <td>{p.disk}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {data.startup?.length ? (
+        <>
+          <div className="fb-tool__bar" style={{ marginTop: '0.9rem' }}>
+            <span>Startup</span>
+            <span className="fb-tool__ghost">{data.startup.length} items</span>
+          </div>
+          <ul className="fb-tree">
+            {data.startup.map((s) => (
+              <li key={s.name} className={s.impact === 'high' ? 'is-warn' : ''}>
+                {s.name}
+                <em>{s.impact}</em>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+    </div>
+  );
+}
+
+export function ToolSurface({ caseObj, toolId, resolved, identify, onScreen }) {
+  useEffect(() => {
+    if (toolId !== 'net') onScreen?.(null);
+  }, [toolId, onScreen]);
+
   if (!toolId) {
+    const copy = identify || {
+      kicker: 'Workbench',
+      lead: 'Open a tool. The ticket names a symptom, not a cause.',
+      steps: ['Read the ticket', 'Probe one tool', 'Pin a theory', 'Apply one fix', 'Verify the LED'],
+      sub: 'Every probe adds minutes to the job.',
+    };
     return (
       <div className="fb-empty">
-        <p className="fb-kicker">Banco de trabajo</p>
-        <p>Abre una herramienta. El ticket describe un síntoma, no una causa. La causa está en los logs, las sondas, el SMART, el ping.</p>
+        <p className="fb-kicker">{copy.kicker}</p>
+        <p>{copy.lead}</p>
         <ol className="fb-empty__steps">
-          <li>Leer el parte</li>
-          <li>Probar una sonda</li>
-          <li>Fijar una teoría</li>
-          <li>Aplicar un arreglo</li>
-          <li>Verificar el LED</li>
+          {copy.steps.map((s) => (
+            <li key={s}>{s}</li>
+          ))}
         </ol>
-        <p className="fb-empty__sub">Cada sonda suma minutos al parte. No las dispares todas “por si acaso”.</p>
+        <p className="fb-empty__sub">{copy.sub}</p>
       </div>
     );
   }
   const data = payload(caseObj, toolId, resolved);
   switch (toolId) {
+    case 'taskmgr':
+      return <TaskMgr data={data} />;
     case 'eventlog':
       return <EventLog lines={data} />;
     case 'devmgmt':
@@ -406,7 +507,7 @@ export function ToolSurface({ caseObj, toolId, resolved }) {
     case 'sensors':
       return <Sensors data={data} />;
     case 'net':
-      return <NetTerm net={data} />;
+      return <NetTerm net={data} onScreen={onScreen} />;
     case 'memtest':
       return <Memtest data={data} />;
     case 'power':

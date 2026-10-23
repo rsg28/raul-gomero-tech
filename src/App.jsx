@@ -15,7 +15,7 @@ import './App.css';
 
 function isStudioAppPath() {
   try {
-    return /^\/(commonplace|fault-bench)\/?$/.test(window.location.pathname);
+    return /^\/(commonplace|fault-bench)(\/.*)?\/?$/.test(window.location.pathname);
   } catch {
     return false;
   }
@@ -65,6 +65,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="commonplace" element={<Commonplace />} />
+            <Route path="fault-bench/profile" element={<FaultBench />} />
             <Route path="fault-bench" element={<FaultBench />} />
             <Route element={<Layout />}>
               <Route index element={<Home />} />
